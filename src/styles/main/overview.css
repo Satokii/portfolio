@@ -8,7 +8,8 @@
 .overview-container {
     grid-template-columns: repeat(2, 1fr);
     border: solid 1px rgba(255, 255, 255, 0.719);
-    box-shadow: 1px 1px 6px rgba(255, 0, 0, 0.726), 0 0 2px rgba(255, 0, 0, 0.726), 0 0 15px white;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgba(255, 0, 0, 0.726), 0 0 2px rgba(255, 0, 0, 0.726), 0 0 12px white;
 }
 
 .overview-container > div {
@@ -32,6 +33,7 @@
 .overview-header-container {
     grid-template-rows: repeat(2, auto);
     gap: 16px;
+    animation: 0.5s linear 0s 1 normal slide-in-from-left;
 }
 
 .overview-header {
@@ -41,7 +43,6 @@
 
 .overview-job-header {
     font-size: 40px;
-    text-shadow: rgba(255, 0, 0, 0.753) 1px 0 8px;
     text-decoration-line: underline;
     text-decoration-thickness: 5px;
 }
@@ -52,6 +53,7 @@
     align-self: center;
     border-radius: 10px;
     margin-top: 50px;
+    animation: 0.5s linear 0s 1 alternate slide-in-from-right;
 }
 
 .profile-photo {
@@ -68,6 +70,7 @@
     margin-left: 10px;
     color: white;
     height: fit-content;
+    animation: 0.5s linear 0s 1 alternate slide-in-from-left;
 }
 
 .quick-links-header {
@@ -100,6 +103,7 @@
     grid-template-rows: repeat(2, 1fr);
     gap: 30px;
     max-width: 500px;
+    animation: 0.5s linear 0s 1 alternate slide-in-from-right;
 }
 
 .overview-text {
@@ -117,12 +121,33 @@
 
 .see-work-below:hover {
     transform: scale(1.1);
-    text-shadow: 1px 1px 2px red;
 }
 
 .point-hand {
     justify-self: center;
 }
+
+@keyframes slide-in-from-right {
+    from {
+        opacity: 0;
+      transform: translateX(500px);
+    }
+    to {
+        opacity: 100%;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-in-from-left {
+    from {
+        opacity: 0;
+      transform: translateX(-500px);
+    }
+    to {
+        opacity: 100%;
+      transform: translateX(0);
+    }
+  }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1420px) {

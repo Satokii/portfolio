@@ -1,5 +1,24 @@
 .main {
     justify-content: center;
     gap: 50px;
+    background-color: rgb(24, 23, 20);
+}
+
+/* LINKS TO PAGES AT END OF EACH MAIN SECTION */
+.page-nav-btn {
+    font-size: 30px;
+    place-self: center;
+    border: solid 1px gray;
+    border-radius: 20px;
+    background-color: inherit;
+    color: inherit;
+    padding: 10px 20px;
+    transition: 0.4s;
+}
+
+.page-nav-btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
     background-color: black;
+    border-color: black;
 }

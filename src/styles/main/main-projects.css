@@ -1,7 +1,8 @@
 /* MAIN - PROJECTS */
 .main-projects {
-    grid-template-rows: 130px 1fr;
+    grid-template-rows: 100px 1fr auto;
     padding: 110px 150px 50px 150px;
+    gap: 20px;
     height: 100%;
     border-bottom: solid 5px rgba(128, 128, 128, 0.47);
 }
@@ -17,9 +18,10 @@
     grid-auto-rows: auto;
     gap: 20px;
     padding: 20px;
-    place-self: center;
+    margin-bottom: 20px;
     border: solid 1px rgba(255, 255, 255, 0.719);
-    box-shadow: 1px 1px 4px white, -1px -1px 4px white, 0 0 15px white;
+    border-radius: 5px;
+    box-shadow: 0 0 2px blue, 0 0 2px blue, 0 0 12px white;
 }
 
 /* INDIVIDUAL PROJECT DISPLAY */
@@ -40,29 +42,59 @@
     align-self: center;
     padding: 20px 20px;
     margin: 0 30px 10px 30px;
-    box-shadow: 1px 1px 3px cyan, 0 0 15px blue, 0 0 10px green;
     transition: 0.6s;
 }
 
 .left-header {
     justify-content: start;
+    animation-timeline: view();
+    animation-name: left-header-animation ;
+    animation-duration: 1s;
+}
+
+@keyframes left-header-animation {
+    from {
+        padding-left: 20px;
+        opacity: 0;
+        box-shadow: 1px 1px 10px white, 1px 1px 10px blue, 0 0 10px white;
+    }
+    to {
+        padding-left: 100px;
+        opacity: 1;
+        box-shadow: 1px 1px 3px cyan, 0 0 10px blue, 0 0 10px green;
+    }
 }
 
 .right-header {
     justify-content: end;
+    animation-timeline: view();
+    animation-name: right-header-animation ;
+    animation-duration: 1s;
 }
 
-.project-info--header:hover {
-    box-shadow: 1px 1px 10px white, 1px 1px 15px cyan, 0 0 20px white;
-    padding-left: 100px;
-    padding-right: 100px;
+@keyframes right-header-animation {
+    from {
+        padding-right: 20px;
+        box-shadow: 1px 1px 10px white, 1px 1px 10px blue, 0 0 10px white;
+        opacity: 0;
+    }
+    to {
+        padding-right: 100px;
+        opacity: 1;
+        box-shadow: 1px 1px 3px cyan, 0 0 10px blue, 0 0 10px green;
+    }
+}
+
+.project-info {
+    animation-timeline: view();
+    animation-name: project-fade-in-animation;
+    animation-duration: 1s;
 }
 
 .project-info:nth-child(odd) {
     grid-template-columns: 150px 1fr;
     padding: 20px 10px;
 }
-
 
 .project-info:nth-child(even) {
     grid-template-columns: 1fr 150px;
@@ -79,15 +111,14 @@
 }
 
 .project-info--description--link {
-    color: rgba(30, 143, 255, 0.785);
     text-decoration: underline;
+    font-size: 22px;
     font-weight: bold;
     padding-top: 20px;
 }
 
 .project-info--description--link:hover {
-    color: white;
-    text-shadow: 1px 1px 4px blue, 4px 4px 8px blue, 0 0 15px cyan;
+    color: dodgerblue;
     text-decoration: none;
     cursor: pointer;
 }
@@ -118,6 +149,10 @@
     gap: 20px;
     place-items: center;
     padding: 20px 20px 20px 30px;
+
+    animation-timeline: view();
+    animation-name: project-fade-in-animation;
+    animation-duration: 1s;
 }
 
 .project-image--image {
@@ -127,7 +162,7 @@
 }
 
 .project-image--image:hover {
-    transform: scale(1.2);
+    transform: scale(1.2) translateY(-80px);
 }
 
 /* GITHUB LINK */
@@ -135,45 +170,55 @@
     grid-template-columns: repeat(2, auto);
     place-items: center;
     gap: 10px;
-    transition: 0.6s;
+    transition: 0.2s;
 }
 
 .project-image--github-link {
+    font-size: 22px;
     font-weight: bold;
 }
 
-.project-image--github-link-container:hover{
+.project-image--github-link-container:hover {
     cursor: pointer;
     background-color: rgb(30, 143, 255);
     border-radius: 20px;
-    padding: 6px 20px;
+    padding: 6px 25px;
 }
 
 .project-image--github-link-container:hover .github-link-logo {
-    animation: 1.8s linear 0s infinite alternate slide-right;
+    animation: 0.4s linear 0s 1 alternate slide-right;
 }
 
 .project-image--github-link-container:hover .project-image--github-link {
-    animation: 1.8s linear 0s infinite alternate slide-left;
+    animation: 0.4s linear 0s 1 alternate slide-left;
 }
 
 @keyframes slide-right {
     from {
-      transform: translateX(0);
+      transform: translateX(12px);
     }
     to {
-      transform: translateX(10px);
+      transform: translateX(0);
     }
   }
   
   @keyframes slide-left {
     from {
-      transform: translateX(0);
+      transform: translateX(-12px);
     }
     to {
-      transform: translateX(-10px);
+      transform: translateX(0);
     }
   }
+
+  @keyframes project-fade-in-animation {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1420px) {

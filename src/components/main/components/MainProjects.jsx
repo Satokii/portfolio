@@ -3,8 +3,15 @@ import Placeholder from '../../../assets/project-images/placeholder.jpg'
 import WorkInProgress from '../../../assets/project-images/work-in-progress.png'
 import GithubLogo from '../../../assets/misc/github-logo.svg'
 import '../../../styles/main/main-projects.css'
+import { useNavigate } from 'react-router-dom'
 
 function MainProjects() {
+
+    const navigate = useNavigate()
+
+    function jumpToTop() {
+        window.scrollTo(0, 0)
+    }
 
     return (
         <section id='projects' className='main-projects grid'>
@@ -36,7 +43,7 @@ function MainProjects() {
                             <a className='project-image--github-link grid' target='_blank' href="https://github.com/Satokii/react-cohort-dashboard-challenge" rel="noreferrer">
                                 Github Link
                             </a>
-                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={20} />
+                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
                         </div>
                         
                     </div>
@@ -50,7 +57,7 @@ function MainProjects() {
                             <a className='project-image--github-link grid' target='_blank' href="#" rel="noreferrer">
                                 Github Link
                             </a>
-                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={20} />
+                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
                         </div>
                     </div>
                     <section className='project-info grid'>
@@ -97,12 +104,15 @@ function MainProjects() {
                             <a className='project-image--github-link grid' target='_blank' href="#" rel="noreferrer">
                                 Github Link
                             </a>
-                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={20} />
+                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
                         </div>
-                        
                     </div>
                 </article>
             </div>
+            <button className='page-nav-btn grid' onClick={() => {
+                navigate('/projects')
+                jumpToTop()
+            }}>View my projects here</button>
         </section>
     )
 }

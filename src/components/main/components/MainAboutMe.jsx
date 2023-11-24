@@ -46,10 +46,10 @@ function MainAboutMe() {
             <div className='tech-stack-text grid'>
                 <p className={showTechStackText.className}>{showTechStackText.name}</p>
             </div>
-            <p className='more-about-me grid' onClick={() => {
+            <button className='page-nav-btn grid' onClick={() => {
                 navigate('/about-me')
                 jumpToTop()
-            }}>Click here to read more about me.</p>
+            }}>Read more about me here</button>
         </section>
     )
 }
