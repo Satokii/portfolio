@@ -1,0 +1,46 @@
+.header {
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    height: 100px;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    background-color: rgb(21, 21, 21);
+    z-index: 1;
+}
+
+.logo {
+    color: whitesmoke;
+}
+
+.logo:hover {
+    /* text-shadow: 1px 1px 4px darkgoldenrod, 2px 2px 3px goldenrod, 0 0 7px darkgoldenrod; */
+    cursor: pointer;
+}
+
+.header-nav {
+    justify-items: end;
+}
+
+.header-nav-list {
+    grid-template-columns: repeat(3, auto);
+    gap: 50px;
+    font-size: 24px;
+}
+
+.header-home:hover {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px red, 2px 2px 7px red, 0 0 10px darkred;
+    cursor: pointer;
+}
+
+.header-about-me:hover {
+    text-shadow: 2px 2px 5px green, 2px 2px 7px green, 0 0 10px greenyellow;
+    cursor: pointer;
+}
+
+.header-projects:hover {
+    text-shadow: 2px 2px 5px dodgerblue, 2px 2px 7px blue, 0 0 10px darkblue;
+    cursor: pointer;
+}

@@ -1,0 +1,5 @@
+.about-me-container {
+    height: 100vh;
+    background-color: black;
+    place-content: center;
+}

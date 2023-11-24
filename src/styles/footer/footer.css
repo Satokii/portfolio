@@ -1,0 +1,25 @@
+.footer {
+    background-color: rgb(21, 21, 21);
+    height: 150px;
+    padding: 10px 20px;
+    justify-content: start;
+    align-content: center;
+}
+
+.jump-to-top-btn {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: black;
+    border: solid 1px white;
+    color: white;
+    transition: 0.8s;
+}
+
+.jump-to-top-btn:hover {
+    cursor: pointer;
+    color: goldenrod;
+    box-shadow: 1px 1px 3px goldenrod, 0 0 2px goldenrod, 0 0 10px lightpink;
+    transform: scale(1.1);
+    margin-left: 50px;
+}

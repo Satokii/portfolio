@@ -1,0 +1,189 @@
+/* MAIN - PROJECTS */
+.main-projects {
+    grid-template-rows: 130px 1fr;
+    padding: 110px 150px 50px 150px;
+    height: 100%;
+    border-bottom: solid 5px rgba(128, 128, 128, 0.47);
+}
+
+/* PROJECT HEADER */
+.main-projects--header {
+    font-size: 70px;
+    text-decoration: underline 4px;
+}
+
+/* PROJECT CONTAINER */
+.main-projects--container {
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    place-self: center;
+    border: solid 1px rgba(255, 255, 255, 0.719);
+    box-shadow: 1px 1px 4px white, -1px -1px 4px white, 0 0 15px white;
+}
+
+/* INDIVIDUAL PROJECT DISPLAY */
+.main-projects--project {
+    grid-template-areas: 
+    "header header"
+    "left right";
+    grid-template-rows: 70px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.67);
+}
+
+/* INFO */
+.project-info--header {
+    grid-area: header;
+    font-size: 26px;
+    align-self: center;
+    padding: 20px 20px;
+    margin: 0 30px 10px 30px;
+    box-shadow: 1px 1px 3px cyan, 0 0 15px blue, 0 0 10px green;
+    transition: 0.6s;
+}
+
+.left-header {
+    justify-content: start;
+}
+
+.right-header {
+    justify-content: end;
+}
+
+.project-info--header:hover {
+    box-shadow: 1px 1px 10px white, 1px 1px 15px cyan, 0 0 20px white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.project-info:nth-child(odd) {
+    grid-template-columns: 150px 1fr;
+    padding: 20px 10px;
+}
+
+
+.project-info:nth-child(even) {
+    grid-template-columns: 1fr 150px;
+    padding: 20px 10px;
+}
+
+.project-info--description {
+    grid-template-rows: 30px 1fr 40px;
+    gap: 10px;
+    font-size: 20px;
+    justify-items: center;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.project-info--description--link {
+    color: rgba(30, 143, 255, 0.785);
+    text-decoration: underline;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.project-info--description--link:hover {
+    color: white;
+    text-shadow: 1px 1px 4px blue, 4px 4px 8px blue, 0 0 15px cyan;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* TECH LIST */
+.project-info--tech {
+    grid-template-rows: 30px 1fr;
+    gap: 50px;
+    justify-items: center;
+    padding: 10px;
+    border-right: solid 1px rgba(255, 255, 255, 0.67);
+    border-left: solid 1px rgba(255, 255, 255, 0.67);
+}
+
+.project-info--tech-header {
+    font-size: 18px;
+    height: fit-content;
+}
+
+.project-info--tech-list {
+    list-style-type: '✅ ';
+    list-style-position: inside;
+}
+
+/* PROJECT IMAGE */
+.project-image--container {
+    grid-template-rows: 1fr 30px;
+    gap: 20px;
+    place-items: center;
+    padding: 20px 20px 20px 30px;
+}
+
+.project-image--image {
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: 0.9s;
+}
+
+.project-image--image:hover {
+    transform: scale(1.2);
+}
+
+/* GITHUB LINK */
+.project-image--github-link-container {
+    grid-template-columns: repeat(2, auto);
+    place-items: center;
+    gap: 10px;
+    transition: 0.6s;
+}
+
+.project-image--github-link {
+    font-weight: bold;
+}
+
+.project-image--github-link-container:hover{
+    cursor: pointer;
+    background-color: rgb(30, 143, 255);
+    border-radius: 20px;
+    padding: 6px 20px;
+}
+
+.project-image--github-link-container:hover .github-link-logo {
+    animation: 1.8s linear 0s infinite alternate slide-right;
+}
+
+.project-image--github-link-container:hover .project-image--github-link {
+    animation: 1.8s linear 0s infinite alternate slide-left;
+}
+
+@keyframes slide-right {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(10px);
+    }
+  }
+  
+  @keyframes slide-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-10px);
+    }
+  }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1420px) {
+    .main-projects {
+        padding: 110px 100px 50px 100px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .main-projects {
+        padding: 110px 20px 50px 20px;
+    }
+}
