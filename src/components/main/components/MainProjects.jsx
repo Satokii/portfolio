@@ -15,7 +15,7 @@ function MainProjects() {
 
     return (
         <section id='projects' className='main-projects grid'>
-            <h2 className='main-projects--header'>Projects</h2>
+            <h2 className='main-projects--header'>My Projects</h2>
             <div className='main-projects--container grid'>
                 <article className='main-projects--project grid'>
                     <h3 className='project-info--header left-header grid'>Social Media Post Feed Dashboard</h3>

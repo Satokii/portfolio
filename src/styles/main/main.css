@@ -19,6 +19,6 @@
 
 .page-nav-btn:hover {
     cursor: pointer;
-    background-color: dodgerblue;
-    border-color: dodgerblue;
+    border-color: white;
+    box-shadow: 1px 1px 3px goldenrod, 0 0 2px goldenrod, 0 0 10px lightpink;
 }

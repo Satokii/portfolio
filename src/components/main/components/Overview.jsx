@@ -14,9 +14,8 @@ function Overview() {
                         <h3 className='overview-job-header'>Front End Developer</h3>
                     </header>
                     <div className='overview-quick-links grid'>
-                        <h3 className='quick-links-header'>Jump to:</h3>
                         <a className='grid' href="#about-me">About Me</a>
-                        <a className='grid' href='#projects'>Projects</a>
+                        <a className='grid' href='#projects'>My Projects</a>
                     </div>
                 </div>
                 <div className='overview-right grid'>
