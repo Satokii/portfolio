@@ -1,8 +1,8 @@
-import HTMLLogo from '../../../assets/tech-stack-logos/html-logo.svg'
-import CSSLogo from '../../../assets/tech-stack-logos/css-logo.svg'
-import JSLogo from '../../../assets/tech-stack-logos/js-logo.svg'
-import ReactLogo from '../../../assets/tech-stack-logos/react-logo.svg'
-import GitLogo from '../../../assets/tech-stack-logos/git-logo.svg'
+import HTMLLogo from '../../../assets/tech-stack-logos/html-logo.jpg'
+import CSSLogo from '../../../assets/tech-stack-logos/css-logo.jpg'
+import JSLogo from '../../../assets/tech-stack-logos/js-logo.png'
+import ReactLogo from '../../../assets/tech-stack-logos/react-logo.png'
+import GitLogo from '../../../assets/tech-stack-logos/git-logo.webp'
 
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
@@ -37,11 +37,11 @@ function MainAboutMe() {
             <h2 className='main-about-me-header'>About Me</h2>
             <p className='main-about-me-text grid'>I have learnt a range of skills in my journey so far. I have experience working with:</p>
             <div onMouseOut={removeText} className='tech-stack-logos grid'>
-                <img className='js-logo' name='JavaScript' onMouseOver={toggleText}  src={JSLogo} alt="js logo" width={200} />
-                <img className='html-logo' name='HTML' onMouseOver={toggleText}  src={HTMLLogo} alt="html logo" width={200}/>
-                <img className='git-logo' name='Git' onMouseOver={toggleText}  src={GitLogo} alt="git logo" width={200} />
-                <img className='css-logo' name='CSS' onMouseOver={toggleText}  src={CSSLogo} alt="css logo" width={200}/>
-                <img className='react-logo' name='React' onMouseOver={toggleText}  src={ReactLogo} alt="react logo" width={200} />
+                <img className='js-logo' name='JavaScript' onMouseOver={toggleText}  src={JSLogo} alt="js logo" />
+                <img className='html-logo' name='HTML' onMouseOver={toggleText}  src={HTMLLogo} alt="html logo"/>
+                <img className='git-logo' name='Git' onMouseOver={toggleText}  src={GitLogo} alt="git logo" />
+                <img className='css-logo' name='CSS' onMouseOver={toggleText}  src={CSSLogo} alt="css logo"/>
+                <img className='react-logo' name='React' onMouseOver={toggleText}  src={ReactLogo} alt="react logo" />
             </div>
             <div className='tech-stack-text grid'>
                 <p className={showTechStackText.className}>{showTechStackText.name}</p>

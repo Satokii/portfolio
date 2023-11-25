@@ -19,9 +19,9 @@
     gap: 20px;
     padding: 20px;
     margin-bottom: 20px;
-    border: solid 1px rgba(255, 255, 255, 0.719);
+    /* border: solid 1px rgba(255, 255, 255, 0.719); */
     border-radius: 5px;
-    box-shadow: 0 0 2px blue, 0 0 2px blue, 0 0 12px white;
+    /* box-shadow: 0 0 2px blue, 0 0 2px blue, 0 0 12px white; */
 }
 
 /* INDIVIDUAL PROJECT DISPLAY */
@@ -53,13 +53,16 @@
 }
 
 @keyframes left-header-animation {
-    from {
+    0% {
         padding-left: 20px;
         opacity: 0;
         box-shadow: 1px 1px 10px white, 1px 1px 10px blue, 0 0 10px white;
     }
-    to {
-        padding-left: 100px;
+    40% {
+        padding-left: 120px;
+    }
+    100% {
+        padding-left: 120px;
         opacity: 1;
         box-shadow: 1px 1px 3px cyan, 0 0 10px blue, 0 0 10px green;
     }
@@ -73,13 +76,16 @@
 }
 
 @keyframes right-header-animation {
-    from {
+    0% {
         padding-right: 20px;
         box-shadow: 1px 1px 10px white, 1px 1px 10px blue, 0 0 10px white;
         opacity: 0;
     }
-    to {
-        padding-right: 100px;
+    40% {
+        padding-right: 120px;
+    }
+    100% {
+        padding-right: 120px;
         opacity: 1;
         box-shadow: 1px 1px 3px cyan, 0 0 10px blue, 0 0 10px green;
     }
@@ -162,7 +168,7 @@
 }
 
 .project-image--image:hover {
-    transform: scale(1.2) translateY(-80px);
+    transform: scale(1.2) translateY(-60px);
 }
 
 /* GITHUB LINK */
@@ -215,7 +221,7 @@
     0% {
         opacity: 0;
     }
-    40% {
+    50% {
         opacity: 1;
     }
 }
