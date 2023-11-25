@@ -124,7 +124,7 @@
 }
 
 .project-info--description--link:hover {
-    color: dodgerblue;
+    text-shadow: 1px 1px 2px dodgerblue, 0 0 1px dodgerblue;
     text-decoration: none;
     cursor: pointer;
 }
