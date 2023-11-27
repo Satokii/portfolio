@@ -14,7 +14,6 @@
 }
 
 .logo:hover {
-    /* text-shadow: 1px 1px 4px darkgoldenrod, 2px 2px 3px goldenrod, 0 0 7px darkgoldenrod; */
     cursor: pointer;
 }
 
@@ -36,11 +35,13 @@
 }
 
 .header-about-me:hover {
+    color: white;
     text-shadow: 2px 2px 5px green, 2px 2px 7px green, 0 0 10px greenyellow;
     cursor: pointer;
 }
 
 .header-projects:hover {
+    color: white;
     text-shadow: 2px 2px 5px dodgerblue, 2px 2px 7px blue, 0 0 10px darkblue;
     cursor: pointer;
 }

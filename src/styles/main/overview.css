@@ -2,14 +2,11 @@
 .overview {
     padding: 20px 150px 50px 150px;
     border-bottom: solid 5px rgba(128, 128, 128, 0.47);
-    /* height: 100vh; */
 }
 
 .overview-container {
     grid-template-columns: repeat(2, 1fr);
-    /* border: solid 1px rgba(255, 255, 255, 0.719); */
     border-radius: 5px;
-    /* box-shadow: 0 0 2px rgba(255, 0, 0, 0.726), 0 0 2px rgba(255, 0, 0, 0.726), 0 0 12px white; */
 }
 
 .overview-container > div {
