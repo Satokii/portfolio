@@ -2,7 +2,7 @@
 .overview {
     padding: 20px 150px 50px 150px;
     border-bottom: solid 5px rgba(128, 128, 128, 0.47);
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .overview-container {
