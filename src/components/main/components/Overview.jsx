@@ -26,11 +26,6 @@ function Overview() {
                         <p className='overview-text'>
                             Hi, my name is Satoki. <br /> I am a student on the Boolean Software Development bootcamp, currently working towards becoming a Full-Stack Developer.
                         </p>
-                        <a className='see-work-below grid' href='#projects'>
-                            <img className='point-hand' src={PointLeft} alt="point down left" width={30} />
-                            <p>Have a look at some of my creations below!</p>
-                            <img className='point-hand' src={PointRight} alt="point down right" width={30} />
-                        </a>
                     </div>
                 </div>
             </div>

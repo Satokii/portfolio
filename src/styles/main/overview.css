@@ -89,32 +89,12 @@
 
 /* OVERVIEW TEXT */
 .overview-text-container {
-    grid-template-rows: repeat(2, 1fr);
-    gap: 30px;
     max-width: 500px;
     animation: 0.5s linear 0s 1 alternate slide-in-from-right;
 }
 
 .overview-text {
     font-size: 22px;
-}
-
-.see-work-below {
-    grid-template-columns: 40px 1fr 40px;
-    gap: 5px;
-    justify-self: center;
-    width: fit-content;
-    height: fit-content;
-    font-size: 20px;
-    transition: transform 0.6s;
-}
-
-.see-work-below:hover {
-    transform: scale(1.1);
-}
-
-.point-hand {
-    justify-self: center;
 }
 
 @keyframes slide-in-from-right {
