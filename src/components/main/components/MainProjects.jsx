@@ -3,15 +3,8 @@ import Placeholder from '../../../assets/project-images/placeholder.jpg'
 import WorkInProgress from '../../../assets/project-images/work-in-progress.png'
 import GithubLogo from '../../../assets/misc/github-logo.svg'
 import '../../../styles/main/main-projects.css'
-import { useNavigate } from 'react-router-dom'
 
 function MainProjects() {
-
-    const navigate = useNavigate()
-
-    function jumpToTop() {
-        window.scrollTo(0, 0)
-    }
 
     return (
         <section id='projects' className='main-projects grid'>
@@ -123,10 +116,6 @@ function MainProjects() {
                     </div>
                 </article>
             </div>
-            <button className='page-nav-btn grid' onClick={() => {
-                navigate('/projects')
-                jumpToTop()
-            }}>View my projects here</button>
         </section>
     )
 }

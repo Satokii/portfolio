@@ -1,6 +1,6 @@
 /* MAIN - ABOUT ME */
 .main-about-me {
-    grid-template-rows: 100px 100px 1fr 120px auto;
+    grid-template-rows: 100px 100px 1fr 120px;
     gap: 20px;
     padding: 110px 150px 50px 150px;
     height: 100%;

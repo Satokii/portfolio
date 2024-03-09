@@ -1,6 +1,4 @@
 import ProfilePhoto from '../../../assets/profile-photo.jpg'
-import PointLeft from '../../../assets/point-left.svg'
-import PointRight from '../../../assets/point-right.svg'
 import '../../../styles/main/overview.css'
 
 function Overview() {

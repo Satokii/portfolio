@@ -5,16 +5,9 @@ import ReactLogo from '../../../assets/tech-stack-logos/react-logo.png'
 import GitLogo from '../../../assets/tech-stack-logos/git-logo.webp'
 
 import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import '../../../styles/main/main-about-me.css'
 
 function MainAboutMe() {
-
-    const navigate = useNavigate()
-
-    function jumpToTop() {
-        window.scrollTo(0, 0)
-    }
 
     const INITIAL_STATE = {
         name: '',
@@ -46,10 +39,6 @@ function MainAboutMe() {
             <div className='tech-stack-text grid'>
                 <p className={showTechStackText.className}>{showTechStackText.name}</p>
             </div>
-            <button className='page-nav-btn grid' onClick={() => {
-                navigate('/about-me')
-                jumpToTop()
-            }}>Read more about me here</button>
         </section>
     )
 }
