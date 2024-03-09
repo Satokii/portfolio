@@ -27,13 +27,6 @@
     font-size: 24px;
 }
 
-.header-home:hover {
-    color: white;
-    text-decoration: none;
-    text-shadow: 2px 2px 5px red, 2px 2px 7px red, 0 0 10px darkred;
-    cursor: pointer;
-}
-
 .header-about-me:hover {
     color: white;
     text-shadow: 2px 2px 5px green, 2px 2px 7px green, 0 0 10px greenyellow;
@@ -43,5 +36,12 @@
 .header-projects:hover {
     color: white;
     text-shadow: 2px 2px 5px dodgerblue, 2px 2px 7px blue, 0 0 10px darkblue;
+    cursor: pointer;
+}
+
+.header-contact:hover {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px red, 2px 2px 7px red, 0 0 10px darkred;
     cursor: pointer;
 }

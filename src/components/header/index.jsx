@@ -19,6 +19,9 @@ function Header() {
                     <li className='header-projects'>
                         <a href="#projects">Projects</a>
                     </li>
+                    <li className='header-contact'>
+                        <a href="#contact">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
