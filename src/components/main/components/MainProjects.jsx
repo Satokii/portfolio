@@ -3,6 +3,8 @@ import Placeholder from '../../../assets/project-images/placeholder.jpg'
 import GithubLogo from '../../../assets/misc/github-logo.svg'
 import SpotifyPlaybackVid from '../../../assets/vids/spotify-playback.mp4'
 import SpotifyDetailsVid from '../../../assets/vids/spotify-details.mp4'
+import WorkoutAddWorkoutVid from '../../../assets/vids/workout-add-workout.mp4'
+import WorkoutNavVid from '../../../assets/vids/workout-general-navigation.mp4'
 import '../../../styles/main/main-projects.css'
 
 function MainProjects() {
@@ -39,21 +41,26 @@ function MainProjects() {
                             <h4>Further Details and Search Feature:</h4>
                             <video controls src={SpotifyDetailsVid} type="video/webm" ></video>
                         </div>
-                        <div className='project-links-container grid'>
+                        {/* <div className='project-links-container grid'>
                             <div className='project-image--github-link-container grid'>
                                 <a className='project-image--github-link grid' target='_blank' href="#" rel="noreferrer">
                                     Github
                                 </a>
                                 <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </article>
                 {/* NEXT PROJECT */}
                 <article className='main-projects--project grid'>
-                    <h3 className='project-info--header right-header grid'>Placeholder Project</h3>
+                    <h3 className='project-info--header right-header grid'>Gymtyme - Workout App</h3>
                     <div className='project-image--container grid'>
-                        <img className='project-image--image' src={Placeholder} alt="placeholder" width={600}/>
+                        <div className='project-video--container grid'>
+                            <h4>Create a new workout:</h4>
+                            <video controls src={WorkoutAddWorkoutVid} type="video/webm" ></video>
+                            <h4>General navigation:</h4>
+                            <video controls src={WorkoutNavVid} type="video/webm" ></video>
+                        </div>
                         <div className='project-links-container grid'>
                             <div className='project-image--github-link-container grid'>
                                 <a className='project-image--github-link grid' target='_blank' href="#" rel="noreferrer">
@@ -71,8 +78,6 @@ function MainProjects() {
                                 <li>CSS</li>
                                 <li>JavaScript</li>
                                 <li>React</li>
-                                <li>React Router</li>
-                                <li>RESTful API</li>
                             </ul>
                         </div>
                         <div className='project-info--description grid'>
@@ -96,7 +101,6 @@ function MainProjects() {
                                 <li>CSS</li>
                                 <li>JavaScript</li>
                                 <li>React</li>
-                                <li>React Router</li>
                                 <li>RESTful API</li>
                             </ul>
                         </div>
