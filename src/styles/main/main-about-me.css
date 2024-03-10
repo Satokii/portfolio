@@ -87,6 +87,18 @@
     text-shadow: 2px 2px 7px cyan, 1px 1px 5px darkcyan, 0 0 10px darkcyan;
 }
 
+.express-logo {
+    text-shadow: 2px 2px 7px #575a5a, 1px 1px 5px #575a5a, 0 0 10px #575a5a;
+}
+
+.postgreSQL-logo {
+    text-shadow: 2px 2px 7px #039393, 1px 1px 5px #039393, 0 0 10px #039393;
+}
+
+.prisma-logo {
+    text-shadow: 2px 2px 7px #046185, 1px 1px 5px #046185, 0 0 10px #046185;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1220px) {
     .about-me {

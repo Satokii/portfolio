@@ -3,6 +3,9 @@ import CSSLogo from '../../../assets/tech-stack-logos/css-logo.jpg'
 import JSLogo from '../../../assets/tech-stack-logos/js-logo.png'
 import ReactLogo from '../../../assets/tech-stack-logos/react-logo.png'
 import GitLogo from '../../../assets/tech-stack-logos/git-logo.webp'
+import ExpressLogo from '../../../assets/tech-stack-logos/express-logo.png'
+import PostgreSQLLogo from '../../../assets/tech-stack-logos/postgreSQL-logo.jpg'
+import PrismaLogo from '../../../assets/tech-stack-logos/prisma-logo.webp'
 
 import { useState } from 'react'
 import '../../../styles/main/main-about-me.css'
@@ -35,6 +38,9 @@ function MainAboutMe() {
                 <img className='git-logo' name='Git' onMouseOver={toggleText}  src={GitLogo} alt="git logo" />
                 <img className='css-logo' name='CSS' onMouseOver={toggleText}  src={CSSLogo} alt="css logo"/>
                 <img className='react-logo' name='React' onMouseOver={toggleText}  src={ReactLogo} alt="react logo" />
+                <img className='express-logo' name='Express.js' onMouseOver={toggleText}  src={ExpressLogo} alt="express logo" />
+                <img className='postgreSQL-logo' name='PostgreSQL' onMouseOver={toggleText}  src={PostgreSQLLogo} alt="postgresql logo" />
+                <img className='prisma-logo' name='Prisma' onMouseOver={toggleText}  src={PrismaLogo} alt="prisma logo" />
             </div>
             <div className='tech-stack-text grid'>
                 <p className={showTechStackText.className}>{showTechStackText.name}</p>
