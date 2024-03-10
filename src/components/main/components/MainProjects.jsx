@@ -63,7 +63,7 @@ function MainProjects() {
                         </div>
                         <div className='project-links-container grid'>
                             <div className='project-image--github-link-container grid'>
-                                <a className='project-image--github-link grid' target='_blank' href="#" rel="noreferrer">
+                                <a className='project-image--github-link grid' target='_blank' href="https://github.com/Satokii/workout-app" rel="noreferrer">
                                     Github
                                 </a>
                                 <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
@@ -82,7 +82,7 @@ function MainProjects() {
                         </div>
                         <div className='project-info--description grid'>
                             <h4>Description</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla quis eum ratione deserunt, distinctio blanditiis sint vero veniam minima cum perspiciatis maiores est provident quae, eius sed architecto id enim. <br /> <br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis error voluptatem porro officiis doloribus non, corrupti qui corporis assumenda explicabo itaque excepturi veniam illo voluptatibus, facilis quam! Qui, harum corporis. <br /> <br />Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque explicabo repellat doloribus consectetur tempore, delectus pariatur accusamus, eaque necessitatibus cum ipsum id iure libero repellendus corporis eligendi quia provident molestiae!</p>
+                            <p>Gymtyme is a front-end workout app designed to allow the user to create workouts tailored to their own fitness goals. The user can either choose exercises from a filterable list of suggested exercises, changing the sets and reps as required, or by manually entering the details of an exercise. <br /><br />The workouts can be completed once done, or deleted if no longer required. A list of completed workouts is available to the user so they have a record of previous workouts. <br /><br />I wanted to create an easy to navigate app so the user can quickly find and create workouts, as well as providing a list of suggested exercises based on each muscle group. The user profile page also provides access to all these features, again for ease of use. </p>
                         </div>
                     </section>
                 </article>
