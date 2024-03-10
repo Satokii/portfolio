@@ -22,11 +22,6 @@ function Overview() {
                         <a className='grid' href='#contact'>Contact Me</a>
                         <a className='grid' href='https://github.com/Satokii' target="_blank" rel="noreferrer">Github</a>
                     </div>
-                    {/* <div className='overview-text-container grid'>
-                        <p className='overview-text'>
-                            Hi, my name is Satoki. <br /> I am a student on the Boolean Software Development bootcamp, currently working towards becoming a Full-Stack Developer.
-                        </p>
-                    </div> */}
                 </div>
             </div>
         </section>
