@@ -1,5 +1,4 @@
 import DashboardMain from '../../../assets/project-images/dashboard-main.png'
-import Placeholder from '../../../assets/project-images/placeholder.jpg'
 import GithubLogo from '../../../assets/misc/github-logo.svg'
 import SpotifyPlaybackVid from '../../../assets/vids/spotify-playback.mp4'
 import SpotifyDetailsVid from '../../../assets/vids/spotify-details.mp4'
