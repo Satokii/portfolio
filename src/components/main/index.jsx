@@ -1,6 +1,7 @@
 import Overview from './components/Overview'
 import MainAboutMe from './components/MainAboutMe'
 import MainProjects from './components/MainProjects'
+import Contact from './components/Contact'
 import '../../styles/main/main.css'
 
 function Main() {
@@ -10,6 +11,7 @@ function Main() {
             <Overview></Overview>
             <MainAboutMe />
             <MainProjects />
+            <Contact />
         </main>
     )
 }
