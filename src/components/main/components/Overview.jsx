@@ -19,6 +19,8 @@ function Overview() {
                     <div className='overview-quick-links grid'>
                         <a className='grid' href="#about-me">About Me</a>
                         <a className='grid' href='#projects'>My Projects</a>
+                        <a className='grid' href='#contact'>Contact Me</a>
+                        <a className='grid' href='https://github.com/Satokii' target="_blank" rel="noreferrer">Github</a>
                     </div>
                     {/* <div className='overview-text-container grid'>
                         <p className='overview-text'>
