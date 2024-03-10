@@ -134,6 +134,12 @@
     list-style-position: inside;
 }
 
+/* PROJECT VIDS */
+.project-video--container {
+    grid-template-rows: repeat(auto-fill, auto);
+    gap: 20px;
+}
+
 /* PROJECT IMAGE */
 .project-image--container {
     grid-template-rows: 1fr 50px;
