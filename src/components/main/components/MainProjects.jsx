@@ -46,10 +46,6 @@ function MainProjects() {
                                 </a>
                                 <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
                             </div>
-                            <div className='project-info--description--link grid'>
-                                <p className='s1'>More</p>
-                                <p className='s2'>Details</p>
-                            </div>
                         </div>
                     </div>
                 </article>
@@ -64,10 +60,6 @@ function MainProjects() {
                                     Github
                                 </a>
                                 <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
-                            </div>
-                            <div className='project-info--description--link grid'>
-                                <p className='s1'>More</p>
-                                <p className='s2'>Details</p>
                             </div>
                         </div>
                     </div>
@@ -89,6 +81,7 @@ function MainProjects() {
                         </div>
                     </section>
                 </article>
+                {/* NEXT PROJECT */}
                 <article className='main-projects--project grid'>
                     <h3 className='project-info--header left-header grid'>Social Media Post Feed Dashboard</h3>
                     <section className='project-info grid'>
@@ -116,10 +109,6 @@ function MainProjects() {
                                     Github
                                 </a>
                                 <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
-                            </div>
-                            <div className='project-info--description--link grid'>
-                                <p className='s1'>More</p>
-                                <p className='s2'>Details</p>
                             </div>
                         </div>
                     </div>

@@ -164,8 +164,7 @@
 
 /* PROJECT LINKS */
 .project-links-container {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    justify-content: center;
 }
 
 /* GITHUB LINK */
@@ -196,34 +195,6 @@
 
 .project-image--github-link-container:hover .project-image--github-link {
     animation: 0.4s linear 0s 1 alternate slide-left;
-}
-
-/* MORE DETAILS LINK */
-.project-info--description--link {
-    grid-template-columns: repeat(2, auto);
-    gap: 7px;
-    place-self: center;
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 20px;
-    border: solid 1px white;
-    border-radius: 20px;
-    padding: 6px 25px;
-}
-
-.project-info--description--link:hover {
-    background-color: rgb(51, 136, 222);
-    border: 0;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.project-info--description--link:hover .s1 {
-    animation: 0.4s linear 0s 1 alternate slide-left;
-}
-
-  .project-info--description--link:hover .s2 {
-    animation: 0.4s linear 0s 1 alternate slide-right;
 }
 
 @keyframes slide-right {
