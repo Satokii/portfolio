@@ -9,7 +9,7 @@ function Overview() {
                 <div className='overview-left grid'>
                     <header className='overview-header-container grid'>
                         <h2 className='overview-header grid'>Satoki Ito</h2>
-                        <h3 className='overview-job-header'>Front End Developer</h3>
+                        <h3 className='overview-job-header'>Full-Stack Developer</h3>
                     </header>
                     <div className='profile-photo-container grid'>
                         <img className='profile-photo grid' src={ProfilePhoto} alt="profile photo" width={380} />

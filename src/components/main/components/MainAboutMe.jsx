@@ -31,7 +31,7 @@ function MainAboutMe() {
     return (
         <section id='about-me' className='main-about-me grid'>
             <h2 className='main-about-me-header'>About Me</h2>
-            <p className='main-about-me-text grid'>Hi, my name is Satoki. <br />I am a front-end developer based in the UK with a passion for developing functional and well-designed applications in our ever expanding world of technology. As a recent graduate of the six-month-long Boolean Software Development bootcamp, I have continued to develop my skills through a range personal projects. I always strive to improve and use my problem-solving mindset to deliver calculated solutions, continuing to hone my skills every day. <br /> I have experience working with the following technologies:</p>
+            <p className='main-about-me-text grid'>Hi, my name is Satoki. <br />I am a junior full-stack developer based in the UK with a passion for developing functional and well-designed applications in our ever expanding world of technology. As a recent graduate of the full-time, six-month-long Boolean UK Software Development course, I have continued to develop my skills through a range personal projects. I always strive to improve and use my problem-solving mindset to deliver calculated solutions, continuing to hone my skills every day. <br /> I have experience working with the following technologies:</p>
             <div onMouseOut={removeText} className='tech-stack-logos grid'>
                 <img className='js-logo' name='JavaScript' onMouseOver={toggleText}  src={JSLogo} alt="js logo" />
                 <img className='html-logo' name='HTML' onMouseOver={toggleText}  src={HTMLLogo} alt="html logo"/>
