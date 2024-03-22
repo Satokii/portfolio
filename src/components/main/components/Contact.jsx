@@ -1,36 +1,42 @@
 import { useState } from 'react'
-import { send } from '@emailjs/browser'
+import emailjs from '@emailjs/browser'
 
 import EmailImg from '../../../assets/svgs/email.svg'
 import '../../../styles/main/main-contact.css'
 
+const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+
+
 function Contact() {
     const [toSend, setToSend] = useState({
         from_name: '',
-        to_name: '',
         message: '',
-        reply_to: '',
-      });
+        from_email: '',
+    });
     
-      const onSubmit = (e) => {
+    const onSubmit = (e) => {
         e.preventDefault();
-        send(
-          'SERVICE ID',
-          'TEMPLATE ID',
-          toSend,
-          'User ID'
-        )
-          .then((response) => {
-            console.log('SUCCESS!', response.status, response.text);
-          })
-          .catch((err) => {
-            console.log('FAILED...', err);
-          });
-      };
+       
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+        .then(() => {
+            alert('Message Sent Successfully')
+        }, (error) => {
+            console.log(error.text);
+            alert('Something went wrong!')
+        });
+       
+        setToSend({
+            from_name: '',
+            message: '',
+            from_email: '',
+        })
+        };
     
-      const handleChange = (e) => {
+    const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value });
-      };
+    };
 
     return (
         <section id='contact' className='main-contact grid'>
@@ -48,13 +54,6 @@ function Contact() {
                     value={toSend.from_name}
                     onChange={handleChange}
                 />
-                {/* <input
-                    type='text'
-                    name='to_name'
-                    placeholder='to name'
-                    value={toSend.to_name}
-                    onChange={handleChange}
-                /> */}
                 <input
                     type='text'
                     name='message'
@@ -64,9 +63,9 @@ function Contact() {
                 />
                 <input
                     type='text'
-                    name='reply_to'
+                    name='from_email'
                     placeholder='Your email'
-                    value={toSend.reply_to}
+                    value={toSend.from_email}
                     onChange={handleChange}
                 />
                 <button type='submit'>Submit</button>
