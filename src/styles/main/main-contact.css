@@ -2,7 +2,7 @@
     grid-template-rows: 100px 30px 1fr;
     padding: 50px 150px 50px 150px;
     gap: 20px;
-    height: 400px;
+    height: 600px;
     border-bottom: solid 5px rgba(128, 128, 128, 0.47);
 }
 
@@ -29,4 +29,32 @@
 
 .main-contact--email{
     font-size: 24px;
+}
+
+.main-contact--contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+  
+.main-contact--contact-form input[type="text"],
+.main-contact--contact-form input[type="email"],
+.main-contact--contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.main-contact--contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.main-contact--contact-form button:hover {
+    background-color: #0056b3;
 }
