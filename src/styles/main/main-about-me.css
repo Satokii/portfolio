@@ -102,30 +102,46 @@
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
     .main-about-me {
-        padding: 60px 80px 50px 80px;
+        padding: 50px 60px 30px 60px;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .main-about-me {
-        padding: 40px 60px 50px 60px;
+        padding: 30px 40px 30px 40px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .main-about-me {
-        padding: 30px 40px 50px 40px;
+        padding: 20px 20px;
+    }
+
+    .main-about-me-header {
+        font-size: 50px;
+        justify-self: center;
+    }
+
+    .main-about-me-text {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .tech-stack-text {
+        font-size: 36px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .main-about-me {
-        padding: 20px 20px 50px 20px;
+    .main-about-me-header {
+        font-size: 40px;
     }
-}
 
-@media screen and (max-width: 360px) {
-    .main-about-me {
-        padding: 20px 10px 50px 10px;
+    .main-about-me-text {
+        font-size: 14px;
+    }
+
+    .tech-stack-text {
+        font-size: 30px;
     }
 }
