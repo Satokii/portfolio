@@ -100,15 +100,32 @@
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1220px) {
-    .about-me {
-        padding: 20px 50px;
-        height: fit-content;
+@media screen and (max-width: 1200px) {
+    .main-about-me {
+        padding: 60px 80px 50px 80px;
     }
 }
 
-@media screen and (max-width: 900px) {
-    .about-me {
-        padding: 20px 20px;
+@media screen and (max-width: 1024px) {
+    .main-about-me {
+        padding: 40px 60px 50px 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main-about-me {
+        padding: 30px 40px 50px 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main-about-me {
+        padding: 20px 20px 50px 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .main-about-me {
+        padding: 20px 10px 50px 10px;
     }
 }
