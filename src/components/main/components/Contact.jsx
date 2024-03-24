@@ -57,14 +57,16 @@ function Contact() {
                         value={toSend.from_email}
                         onChange={handleChange}
                     />
-                    <input
-                        type='text'
-                        name='message'
+                    <textarea 
+                        name="message" 
+                        id="message" 
                         placeholder='Your message'
+                        cols="30" 
+                        rows="5"
                         value={toSend.message}
                         onChange={handleChange}
-                    />
-                    
+                    >
+                    </textarea>                    
                     <button type='submit'>Submit</button>
                 </form>
             </div>
