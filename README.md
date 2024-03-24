@@ -1,3 +1,5 @@
-# individual-portfolio
+# Portfolio
 
-Deployed portfolio: <https://satoki-ito.netlify.app/>
+Hi! Welcome to my portfolio repository.
+
+Please find the deployed portfolio page by clicking the following link: <https://satoki-ito.netlify.app/>
