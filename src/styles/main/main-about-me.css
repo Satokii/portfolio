@@ -114,6 +114,7 @@
 
 @media screen and (max-width: 768px) {
     .main-about-me {
+        grid-template-rows: 60px auto 1fr 60px;
         padding: 20px 20px;
     }
 
@@ -125,6 +126,13 @@
     .main-about-me-text {
         font-size: 16px;
         text-align: center;
+        width: 100vw;
+        padding: 0 5px;
+    }
+
+    .tech-stack-logos {
+        width: 100vw;
+        place-self: center;
     }
 
     .tech-stack-text {
