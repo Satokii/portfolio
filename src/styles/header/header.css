@@ -1,34 +1,99 @@
 .header {
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    height: 100px;
-    padding: 20px 40px;
-    position: sticky;
-    top: 0;
     background-color: rgb(21, 21, 21);
-    z-index: 1;
+    color: white;
+    position: sticky;
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 40px;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
+    margin: 0;
     color: whitesmoke;
+    cursor: pointer;
 }
 
-.logo:hover {
+.menu-toggle {
+    display: none;
     cursor: pointer;
+    justify-self: center;
 }
 
 .header-nav {
-    justify-items: end;
+    grid-auto-flow: column;
+    gap: 20px;
+    justify-content: end;
+    overflow: hidden;
 }
 
 .header-nav-list {
-    grid-template-columns: repeat(3, auto);
+    list-style: none;
+    grid-auto-flow: column;
     gap: 50px;
     font-size: 24px;
+    transition: 0.5s;
 }
 
 .header-nav-list > li:hover {
-    color: white;
     cursor: pointer;
     transform: scale(1.05);
+}
+
+/* HAMBURGER MENU */
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.bar.active:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar.active:nth-child(2) {
+    opacity: 0;
+}
+
+.bar.active:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .header {
+        grid-template-columns: 1fr;
+    }
+
+    .header-nav {
+        grid-auto-flow: row;
+        justify-content: center;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .header-nav.active {
+        max-height: 200px;
+    }
+
+    .logo {
+        justify-self: center;
+        padding-bottom: 20px;
+    }
+
+    .header-nav-list {
+        grid-auto-flow: row;
+        gap: 20px;
+        justify-items: center;
+        padding-top: 10px;
+    }
 }
