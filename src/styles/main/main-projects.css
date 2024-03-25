@@ -57,11 +57,14 @@
     justify-content: center;
 }
 
+/* IMAGE/VIDEO STYLES */
+.project-image--container,
 .project-video--container {
     grid-template-rows: repeat(auto-fill, auto);
     gap: 20px;
 }
 
+.project-image--container,
 .project-video--container video {
     padding: 10px 50px;
 }

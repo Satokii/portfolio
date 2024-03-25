@@ -161,7 +161,7 @@ function MainProjects() {
                     <div className='project-video--container grid'>
                         <div>
                             <h4 className='project-sub-header'>Music Playback and Volume Controls Demo:</h4>
-                            <video className='grid' controls src={SpotifyPlaybackVid} type="video/webm" ></video>
+                            <video controls src={SpotifyPlaybackVid} type="video/webm" ></video>
                         </div>
                         <div>
                             <h4 className='project-sub-header'>Further Details and Search Feature Demo:</h4>
@@ -181,11 +181,11 @@ function MainProjects() {
                     <h3 className='project-info--header grid'>Gymtyme - Workout App</h3>
                     <section className='project-info grid'>
                         <div className='project-info--description grid'>
-                            <h4>Description</h4>
+                            <h4 className='project-sub-header'>Description</h4>
                             <p>Gymtyme is a front-end workout app designed to allow the user to create workouts tailored to their own fitness goals. The user can either choose exercises from a filterable list of suggested exercises, changing the sets and reps as required, or by manually entering the details of an exercise. <br /><br />The workouts can be completed once done, or deleted if no longer required. A list of completed workouts is available to the user so they have a record of previous workouts. <br /><br />I wanted to create an easy to navigate app so the user can quickly find and create workouts, as well as providing a list of suggested exercises based on each muscle group. The user profile page also provides access to all these features, again for ease of use. </p>
                         </div>
                         <div className='project-info--tech grid'>
-                            <h4 className='project-info--tech-header'>Tech Used</h4>
+                            <h4 className='project-sub-header'>Tech Used</h4>
                             <ul className='project-info--tech-list grid'>
                                 <li>HTML</li>
                                 <li>CSS</li>
@@ -194,20 +194,22 @@ function MainProjects() {
                             </ul>
                         </div>
                     </section>
-                    <div className='project-image--container grid'>
-                        <div className='project-video--container grid'>
-                            <h4>Create a new workout:</h4>
+                    <div className='project-video--container grid'>
+                        <div>
+                            <h4 className='project-sub-header'>Create New Workout Demo:</h4>
                             <video controls src={WorkoutAddWorkoutVid} type="video/webm" ></video>
-                            <h4>General navigation:</h4>
+                        </div>
+                        <div>
+                            <h4 className='project-sub-header'>App Navigation Demo:</h4>
                             <video controls src={WorkoutNavVid} type="video/webm" ></video>
                         </div>
-                        <div className='project-links-container grid'>
-                            <div className='project-image--github-link-container grid'>
-                                <a className='project-image--github-link grid' target='_blank' href="https://github.com/Satokii/workout-app" rel="noreferrer">
+                    </div>
+                    <div className='project-links-container grid'>
+                        <div className='github-link--container grid'>
+                            <a className='github-link grid' target='_blank' href="https://github.com/Satokii/workout-app" rel="noreferrer">
                                     Github
-                                </a>
-                                <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
-                            </div>
+                            </a>
+                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
                         </div>
                     </div>
                 </article>
@@ -215,11 +217,11 @@ function MainProjects() {
                     <h3 className='project-info--header grid'>Social Media Post Feed Dashboard</h3>
                     <section className='project-info grid'>
                         <div className='project-info--description grid'>
-                            <h4>Description</h4>
+                            <h4 className='project-sub-header'>Description</h4>
                             <p>I built this social media style community post dashboard from scratch as a part of my Boolean bootcamp. I used a reference image provided by Boolean to guide the styling of the application. <br /> <br /> A user can create a new post, delete existing comments and posts, create a new user and also update existing user details. <br /> <br />I used an API as my data source and used the relevant API methods in order to send relevant requests to achieve the aforementioned behaviours.</p>
                         </div>
                         <div className='project-info--tech grid'>
-                            <h4 className='project-info--tech-header'>Tech Used</h4>
+                            <h4 className='project-sub-header'>Tech Used</h4>
                             <ul className='project-info--tech-list grid'>
                                 <li>HTML</li>
                                 <li>CSS</li>
@@ -231,13 +233,13 @@ function MainProjects() {
                     </section>
                     <div className='project-image--container grid'>
                         <img className='project-image--image' src={DashboardMain} alt="dashboard project main photo"/>
-                        <div className='project-links-container grid'>
-                            <div className='project-image--github-link-container grid'>
-                                <a className='project-image--github-link grid' target='_blank' href="https://github.com/Satokii/react-cohort-dashboard-challenge" rel="noreferrer">
+                    </div>
+                    <div className='project-links-container grid'>
+                        <div className='github-link--container grid'>
+                            <a className='github-link grid' target='_blank' href="https://github.com/Satokii/react-cohort-dashboard-challenge" rel="noreferrer">
                                     Github
-                                </a>
-                                <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
-                            </div>
+                            </a>
+                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
                         </div>
                     </div>
                 </article>
