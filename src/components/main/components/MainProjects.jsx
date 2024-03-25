@@ -137,8 +137,8 @@ function MainProjects() {
         <section id='projects' className='main-projects grid'>
             <h2 className='main-projects--header'>My Projects</h2>
             <div className='main-projects--container grid'>
-            <article className='main-projects--project grid'>
-                    <h3 className='project-info--header left-header grid'>Spotify Clone</h3>
+                <article className='main-projects--project grid'>
+                    <h3 className='project-info--header grid'>Spotify Clone</h3>
                     <section className='project-info grid'>
                         <div className='project-info--description grid'>
                             <h4>Description</h4>
@@ -146,7 +146,7 @@ function MainProjects() {
                         </div>
                         <div className='project-info--tech grid'>
                             <h4 className='project-info--tech-header'>Tech Used</h4>
-                            <ul className='project-info--tech-list'>
+                            <ul className='project-info--tech-list grid'>
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
@@ -176,7 +176,7 @@ function MainProjects() {
                     </div>
                 </article>
                 <article className='main-projects--project grid'>
-                    <h3 className='project-info--header right-header grid'>Gymtyme - Workout App</h3>
+                    <h3 className='project-info--header grid'>Gymtyme - Workout App</h3>
                     <section className='project-info grid'>
                         <div className='project-info--description grid'>
                             <h4>Description</h4>
@@ -184,7 +184,7 @@ function MainProjects() {
                         </div>
                         <div className='project-info--tech grid'>
                             <h4 className='project-info--tech-header'>Tech Used</h4>
-                            <ul className='project-info--tech-list'>
+                            <ul className='project-info--tech-list grid'>
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
@@ -210,7 +210,7 @@ function MainProjects() {
                     </div>
                 </article>
                 <article className='main-projects--project grid'>
-                    <h3 className='project-info--header left-header grid'>Social Media Post Feed Dashboard</h3>
+                    <h3 className='project-info--header grid'>Social Media Post Feed Dashboard</h3>
                     <section className='project-info grid'>
                         <div className='project-info--description grid'>
                             <h4>Description</h4>
@@ -218,7 +218,7 @@ function MainProjects() {
                         </div>
                         <div className='project-info--tech grid'>
                             <h4 className='project-info--tech-header'>Tech Used</h4>
-                            <ul className='project-info--tech-list'>
+                            <ul className='project-info--tech-list grid'>
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>JavaScript</li>
