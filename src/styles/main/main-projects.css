@@ -155,9 +155,6 @@
     .project-info--tech-list {
         grid-template-columns: repeat(4, auto);
     }
-    .project-video--container {
-        font-size: 14px;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -186,16 +183,34 @@
         grid-template-columns: repeat(2, auto);
         column-gap: 20px;
         row-gap: 10px;
-    }
-    .project-video--container {
         font-size: 14px;
+    }
+    .project-image--container,
+    .project-video--container {
+        gap: 10px;
+    }
+    .project-image--container,
+    .project-video--container video {
+        padding: 10px;
     }
     .github-link--container {
         padding: 4px 20px;
     }
-    
     .github-link {
         font-size: 14px;
         font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .project-sub-header {
+        font-size: 12px;
+    }
+    .project-info--description {
+        font-size: 13px;
+    }
+    .project-info--tech-list {
+        column-gap: 15px;
+        font-size: 13px;
     }
 }
