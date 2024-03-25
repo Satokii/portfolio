@@ -23,3 +23,9 @@
     transform: scale(1.1);
     margin-left: 50px;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        justify-content: center;
+    }
+}
