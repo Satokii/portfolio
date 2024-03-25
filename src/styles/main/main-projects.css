@@ -158,6 +158,9 @@
 }
 
 @media screen and (max-width: 480px) {
+    .main-projects {
+        padding: 50px 20px 30px;
+    }
     .main-projects--container {
         gap: 10px;
     }
