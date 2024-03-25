@@ -43,14 +43,19 @@ function MainProjects() {
                             <video preload='auto' controls src={`${SpotifyDetailsVid}#t=0.1`} type="video/mp4" ></video>
                         </div>
                     </div>
-                    <a className='project-links-container grid' target='_blank' href="#" rel="noreferrer">
+                    <div className='project-links-container grid'>
+                        <div className='github-link--container grid'>
+                            Github link pending
+                        </div>
+                    </div>
+                    {/* <a className='project-links-container grid' target='_blank' href="#" rel="noreferrer">
                         <div className='github-link--container grid'>
                             <p className='github-link grid'>
                                 Github
                             </p>
                             <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
                         </div>
-                    </a>
+                    </a> */}
                 </article>
                 <article className='main-projects--project grid'>
                     <h3 className='project-info--header grid'>Gymtyme - Workout App</h3>
