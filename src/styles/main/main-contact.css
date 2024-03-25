@@ -14,6 +14,7 @@
 .main-contact--subheader {
     font-size: 26px;
     font-weight: normal;
+    text-align: center;
 }
 
 .main-contact--contact-info-container{
@@ -58,4 +59,11 @@
   
 .main-contact--contact-form button:hover {
     background-color: #0056b3;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px) {
+    .main-contact {
+        padding: 50px 60px 30px 60px;
+    }
 }
