@@ -71,7 +71,37 @@
 .project-video--container video {
     padding: 10px 50px;
 }
+
+/* PROJECT LINKS */
+.project-links-container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 10px;
+}
   
+/* DEPLOYED LINK */
+.deployed-link--container {
+    place-self: center;
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 6px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.deployed-link--container span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.deployed-link--container:hover {
+    background-color: #ab33de;
+    border-color: #ab33de;
+}
+
 /* GITHUB LINK */
 .github-link--container {
     grid-template-columns: repeat(2, auto);
@@ -80,7 +110,6 @@
     border: solid 1px white;
     border-radius: 20px;
     padding: 6px 25px;
-    margin-bottom: 10px;
     gap: 10px;
     transition: 0.2s;
 }
@@ -162,6 +191,9 @@
     }
     .github-link--container:hover {
         cursor: pointer;
+    }
+    .deployed-link--container:hover {
+       cursor: pointer;
     }
 }
 
