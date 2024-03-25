@@ -3,7 +3,7 @@
     align-items: center;
     background-color: rgb(21, 21, 21);
     color: white;
-    position: sticky;
+    position: fixed;
     width: 100%;
     min-height: 100px;
     padding: 20px 40px;
