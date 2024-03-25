@@ -185,12 +185,20 @@
     .project-info--tech-list {
         grid-template-columns: repeat(4, auto);
     }
+    .project-links-container {
+        grid-auto-flow: row;
+        gap: 20px;
+    }
     .github-link--container {
         background-color: rgb(51, 136, 222);
         border-color: rgb(51, 136, 222);
     }
     .github-link--container:hover {
         cursor: pointer;
+    }
+    .deployed-link--container {
+        background-color: #ab33de;
+        border-color: #ab33de;
     }
     .deployed-link--container:hover {
        cursor: pointer;
@@ -241,7 +249,13 @@
     }
     .github-link {
         font-size: 14px;
-        font-weight: bold;
+    }
+    .deployed-link--container {
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+    .deployed-link--container span {
+        font-size: 12px;
     }
 }
 
@@ -255,5 +269,11 @@
     .project-info--tech-list {
         column-gap: 15px;
         font-size: 13px;
+    }
+    .project-links-container {
+        gap: 15px;
+    }
+    .deployed-link--container {
+        padding: 5px 10px;
     }
 }
