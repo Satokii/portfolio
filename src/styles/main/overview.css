@@ -84,35 +84,24 @@
     transition-timing-function: ease;
 }
 
-/* OVERVIEW TEXT */
-.overview-text-container {
-    max-width: 500px;
-    animation: 0.5s linear 0s 1 alternate slide-in-from-right;
-}
-
-.overview-text {
-    font-size: 22px;
-}
-
 /* MEDIA QUERIES */
 @media screen and (max-width: 1024px) {
     .overview {
         padding: 20px 50px;
     }
-    
     .overview-container {
         grid-template-columns: 1fr;
     }
-    
+    .overview-left {
+        border-right: none;
+    }
     .overview-left, .overview-right {
         padding: 10px;
     }
-    
     .profile-photo-container {
         width: 100%;
         margin-top: 20px;
     }
-    
     .overview-text-container {
         max-width: 100%;
     }
@@ -122,63 +111,38 @@
     .overview {
         padding: 20px 50px;
     }
-    
     .overview-container {
         grid-template-columns: 1fr;
     }
-    
     .overview-left {
         grid-template-rows: auto;
-        border-right: none;
         padding: 20px;
     }
-    
     .overview-right {
         padding: 20px;
     }
-    
     .profile-photo-container {
         width: 100%;
         margin-top: 20px;
     }
-    
     .overview-quick-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         gap: 15px;
-    }
-    
-    .overview-quick-links > a {
-        width: auto;
-    }
-    
-    .overview-text-container {
-        max-width: 100%;
-    }
+    } 
 }
 
 @media screen and (max-width: 480px) {
     .overview {
         padding: 20px;
     }
-    
-    .overview-container {
-        grid-template-columns: 1fr;
-    }
-    
     .overview-left, .overview-right {
         padding: 10px;
     }
-    
     .overview-header {
         font-size: 60px;
     }
-    
     .overview-job-header {
         font-size: 30px;
     }
-    
     .profile-photo-container {
         width: 100%;
         margin-top: 20px;
