@@ -158,20 +158,22 @@ function MainProjects() {
                             </ul>
                         </div>
                     </section>
-                    <div className='project-image--container grid'>
-                        <div className='project-video--container grid'>
-                            <h4 className='project-sub-header'>Music Playback and Volume Controls:</h4>
-                            <video controls src={SpotifyPlaybackVid} type="video/webm" ></video>
-                            <h4 className='project-sub-header'>Further Details and Search Feature:</h4>
+                    <div className='project-video--container grid'>
+                        <div>
+                            <h4 className='project-sub-header'>Music Playback and Volume Controls Demo:</h4>
+                            <video className='grid' controls src={SpotifyPlaybackVid} type="video/webm" ></video>
+                        </div>
+                        <div>
+                            <h4 className='project-sub-header'>Further Details and Search Feature Demo:</h4>
                             <video controls src={SpotifyDetailsVid} type="video/webm" ></video>
                         </div>
-                        <div className='project-links-container grid'>
-                            <div className='project-image--github-link-container grid'>
-                                <a className='project-image--github-link grid' target='_blank' href="#" rel="noreferrer">
+                    </div>
+                    <div className='project-links-container grid'>
+                        <div className='project-image--github-link-container grid'>
+                            <a className='project-image--github-link grid' target='_blank' href="#" rel="noreferrer">
                                     Github
-                                </a>
-                                <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
-                            </div>
+                            </a>
+                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
                         </div>
                     </div>
                 </article>
