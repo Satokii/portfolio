@@ -90,17 +90,20 @@
     font-weight: bold;
 }
 
-.github-link--container:hover {
+.github-link--container:hover,
+.github-link--container:active {
     cursor: pointer;
     background-color: rgb(51, 136, 222);
     border-color: rgb(51, 136, 222);
 }
 
-.github-link--container:hover .github-link-logo {
+.github-link--container:hover .github-link-logo,
+.github-link--container:active .github-link-logo {
     animation: 0.4s linear 0s 1 alternate slide-right;
 }
 
-.github-link--container:hover .github-link {
+.github-link--container:hover .github-link, 
+.github-link--container:active .github-link{
     animation: 0.4s linear 0s 1 alternate slide-left;
 }
 
