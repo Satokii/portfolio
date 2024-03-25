@@ -38,6 +38,8 @@
     margin-bottom: 10px;
     font-size: 22px;
     color: #32b5e1;
+    text-decoration: underline 1.4px;
+    text-underline-offset: 3px;
 }
   
 .project-info--description,
