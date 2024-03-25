@@ -63,38 +63,37 @@
 }
 
 .project-video--container video {
-    /* width: 800px; */
-    /* place-self: center; */
     padding: 10px 50px;
 }
   
 /* GITHUB LINK */
-.project-image--github-link-container {
+.github-link--container {
     grid-template-columns: repeat(2, auto);
     place-self: center;
     border: solid 1px white;
     border-radius: 20px;
     padding: 6px 25px;
+    margin-bottom: 10px;
     gap: 10px;
     transition: 0.2s;
 }
 
-.project-image--github-link {
+.github-link {
     font-size: 20px;
     font-weight: bold;
 }
 
-.project-image--github-link-container:hover {
+.github-link--container:hover {
     cursor: pointer;
     background-color: rgb(51, 136, 222);
-    border: 0;
+    border-color: rgb(51, 136, 222);
 }
 
-.project-image--github-link-container:hover .github-link-logo {
+.github-link--container:hover .github-link-logo {
     animation: 0.4s linear 0s 1 alternate slide-right;
 }
 
-.project-image--github-link-container:hover .project-image--github-link {
+.github-link--container:hover .github-link {
     animation: 0.4s linear 0s 1 alternate slide-left;
 }
 

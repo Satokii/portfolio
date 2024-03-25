@@ -169,8 +169,8 @@ function MainProjects() {
                         </div>
                     </div>
                     <div className='project-links-container grid'>
-                        <div className='project-image--github-link-container grid'>
-                            <a className='project-image--github-link grid' target='_blank' href="#" rel="noreferrer">
+                        <div className='github-link--container grid'>
+                            <a className='github-link grid' target='_blank' href="#" rel="noreferrer">
                                     Github
                             </a>
                             <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
