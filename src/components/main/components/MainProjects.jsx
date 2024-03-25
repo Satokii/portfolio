@@ -36,11 +36,11 @@ function MainProjects() {
                     <div className='project-video--container grid'>
                         <div>
                             <h4 className='project-sub-header'>Music Playback and Volume Controls Demo:</h4>
-                            <video controls src={SpotifyPlaybackVid} type="video/webm" ></video>
+                            <video preload='metadata' controls src={SpotifyPlaybackVid} type="video/webm" ></video>
                         </div>
                         <div>
                             <h4 className='project-sub-header'>Further Details and Search Feature Demo:</h4>
-                            <video controls src={SpotifyDetailsVid} type="video/webm" ></video>
+                            <video preload='metadata' controls src={SpotifyDetailsVid} type="video/webm" ></video>
                         </div>
                     </div>
                     <a className='project-links-container grid' target='_blank' href="#" rel="noreferrer">
@@ -72,11 +72,11 @@ function MainProjects() {
                     <div className='project-video--container grid'>
                         <div>
                             <h4 className='project-sub-header'>Create New Workout Demo:</h4>
-                            <video controls src={WorkoutAddWorkoutVid} type="video/webm" ></video>
+                            <video preload='metadata' controls src={WorkoutAddWorkoutVid} type="video/webm" ></video>
                         </div>
                         <div>
                             <h4 className='project-sub-header'>App Navigation Demo:</h4>
-                            <video controls src={WorkoutNavVid} type="video/webm" ></video>
+                            <video preload='metadata' controls src={WorkoutNavVid} type="video/webm" ></video>
                         </div>
                     </div>
                     <a className='project-links-container grid' target='_blank' href="https://github.com/Satokii/workout-app" rel="noreferrer">
