@@ -18,11 +18,39 @@
 }
 
 .main-contact--contact-info-container{
-    grid-template-columns: repeat(2, auto);
     gap: 20px;
     place-content: center;
 }
 
+/* LINKEDIN */
+.main-contact--linkedin-container {
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.main-contact--linkedin-link {
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.main-contact--linkedin-text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main-contact--linkedin-logo {
+    width: 25px;
+    height: 25px;
+    justify-self: end;
+}
+
+/* CONTACT FORM */
 .main-contact--contact-form {
     grid-template-columns: 1fr;
     width: 400px;

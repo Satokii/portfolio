@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import emailjs from '@emailjs/browser'
-
+import LinkedInLogo from '../../../assets/misc/linkedin-logo.webp'
 import '../../../styles/main/main-contact.css'
 
 const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
@@ -40,7 +40,7 @@ function Contact() {
     return (
         <section id='contact' className='main-contact grid'>
             <h2 className='main-contact--header'>Contact</h2>
-            <h3 className='main-contact--subheader'>Get in touch. Let&apos;s connect!</h3>
+            <h3 className='main-contact--subheader'>Get in touch!</h3>
             <div className='main-contact--contact-info-container grid'>
                 <form className='main-contact--contact-form grid' onSubmit={onSubmit}>
                     <input
@@ -69,6 +69,12 @@ function Contact() {
                     </textarea>                    
                     <button type='submit'>Submit</button>
                 </form>
+                <div className='main-contact--linkedin-container grid'>
+                    <a className='main-contact--linkedin-link grid' href="https://www.linkedin.com/in/satoki-ito-470133241/">
+                        <p className='main-contact--linkedin-text'> Connect with me</p>
+                        <img className='main-contact--linkedin-logo' src={LinkedInLogo} alt="linkedin logo" />
+                    </a>
+                </div>
             </div>
         </section>
     )
