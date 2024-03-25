@@ -32,6 +32,7 @@
 .project-info--header {
     font-size: 36px;
     text-align: center;
+    padding: 10px 0;
 }
 
 .project-sub-header {
@@ -75,6 +76,7 @@
 .github-link--container {
     grid-template-columns: repeat(2, auto);
     place-self: center;
+    align-items: center;
     border: solid 1px white;
     border-radius: 20px;
     padding: 6px 25px;
@@ -138,53 +140,62 @@
     }
     .main-projects--header {
         font-size: 50px;
+        justify-self: center;
     }
     .project-info--header {
         font-size: 20px;
     }
+    .project-sub-header {
+        font-size: 17px;
+    }
     .project-info--description {
         font-size: 16px;
         padding: 10px 30px;
+    }
+    .project-info--tech-list {
+        grid-template-columns: repeat(4, auto);
     }
     .project-video--container {
         font-size: 14px;
     }
 }
 
-@media screen and (max-width: 576px) {
-    .main-projects {
-        padding: 60px 10px 10px 10px;
+@media screen and (max-width: 480px) {
+    .main-projects--container {
+        gap: 10px;
+    }
+    .main-projects--project {
+        gap: 5px;
+        margin-bottom: 10px;
+        padding: 5px 2px;
     }
     .main-projects--header {
         font-size: 40px;
     }
     .project-info--header {
-        font-size: 16px;
+        font-size: 20px;
     }
-    .project-info {
-        padding: 10px;
+    .project-sub-header {
+        font-size: 16px;
     }
     .project-info--description {
-        padding: 5px 15px;
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .project-info--tech-list {
+        grid-template-columns: repeat(2, auto);
+        column-gap: 20px;
+        row-gap: 10px;
+    }
+    .project-video--container {
         font-size: 14px;
     }
-    .project-info--tech {
-        padding: 5px;
+    .github-link--container {
+        padding: 4px 20px;
+    }
+    
+    .github-link {
         font-size: 14px;
-    }
-    .project-image--container {
-        padding: 20px;
-    }
-    .project-image--image {
-        margin-top: 30px;
-    }
-    .project-links-container {
-        padding: 10px;
-    }
-    .project-image--github-link-container {
-        padding: 4px 15px;
-    }
-    .project-image--github-link {
-        font-size: 16px;
+        font-weight: bold;
     }
 }
