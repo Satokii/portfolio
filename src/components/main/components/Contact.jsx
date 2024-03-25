@@ -42,7 +42,7 @@ function Contact() {
             <h2 className='main-contact--header'>Contact</h2>
             <h3 className='main-contact--subheader'>Get in touch. Let&apos;s connect!</h3>
             <div className='main-contact--contact-info-container grid'>
-                <form className='main-contact--contact-form' onSubmit={onSubmit}>
+                <form className='main-contact--contact-form grid' onSubmit={onSubmit}>
                     <input
                         type='text'
                         name='from_name'

@@ -24,8 +24,11 @@
 }
 
 .main-contact--contact-form {
-    max-width: 400px;
+    grid-template-columns: 1fr;
+    width: 400px;
     margin: 0 auto;
+    justify-items: center;
+
 }
   
 .main-contact--contact-form input[type="text"],
@@ -46,6 +49,7 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    justify-self: end;
 }
   
 .main-contact--contact-form button:hover {
@@ -89,6 +93,32 @@
         font-size: 18px;
     }
     .main-contact--contact-form {
-        max-width: 90%;
+        max-width: 80%;
+    }
+    .main-contact--contact-form input[type="text"],
+    .main-contact--contact-form input[type="email"],
+    .main-contact--contact-form textarea {
+        width: calc(100% - 20px);
+    }
+    .main-contact--contact-form button {
+        justify-self: center;
+    }
+    .main-contact--contact-form button {
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .main-contact {
+        padding: 40px 10px 20px;
+    }
+    .main-contact--contact-form {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-contact--contact-form {
+        width: 310px;
     }
 }
