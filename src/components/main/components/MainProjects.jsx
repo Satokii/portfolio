@@ -141,11 +141,11 @@ function MainProjects() {
                     <h3 className='project-info--header grid'>Spotify Clone</h3>
                     <section className='project-info grid'>
                         <div className='project-info--description grid'>
-                            <h4>Description</h4>
+                            <h4 className='project-sub-header'>Description</h4>
                             <p>My most recent project (and current work in progress) is the creation of this full-stack Spotify clone app. What I like most about the Spotify app is the design and ease of use for the consumer. As such, I wanted to remain truthful to this design in my own approach, whilst also implementing a few subtle changes to add my own flair. <br /> <br /> In order to achieve this I have utilised the Spotify Web API to create an app with the core functionality to allow a user to play/pause a track, skip forward/backwards and change/mute the volume. I have also implemented a search feature and the details for every artist/album/playlist can be viewed throughout the app. The user&apos;s own playlists, saved albums and liked tracks are available in the left side menu. <br /> <br /> A particular feature of the Spotify app I like is the use of the album artwork colours to generate a gradient background. I have also implemented this feature into my own app to mix the predominant colours of an album artwork and use the result to dynamically render a gradient along with the core background colour. <br /> <br />Regarding the backend aspect of this app, I have implemented a login feature for added security. </p>
                         </div>
                         <div className='project-info--tech grid'>
-                            <h4 className='project-info--tech-header'>Tech Used</h4>
+                            <h4 className='project-sub-header'>Tech Used</h4>
                             <ul className='project-info--tech-list grid'>
                                 <li>HTML</li>
                                 <li>CSS</li>
@@ -160,9 +160,9 @@ function MainProjects() {
                     </section>
                     <div className='project-image--container grid'>
                         <div className='project-video--container grid'>
-                            <h4>Music Playback and Volume Controls:</h4>
+                            <h4 className='project-sub-header'>Music Playback and Volume Controls:</h4>
                             <video controls src={SpotifyPlaybackVid} type="video/webm" ></video>
-                            <h4>Further Details and Search Feature:</h4>
+                            <h4 className='project-sub-header'>Further Details and Search Feature:</h4>
                             <video controls src={SpotifyDetailsVid} type="video/webm" ></video>
                         </div>
                         <div className='project-links-container grid'>
