@@ -125,9 +125,8 @@
 
     .main-about-me-text {
         font-size: 16px;
-        text-align: center;
-        width: 100vw;
-        padding: 0 5px;
+        text-align: justify;
+        padding: 0 30px;
     }
 
     .tech-stack-logos {
