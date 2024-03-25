@@ -90,20 +90,17 @@
     font-weight: bold;
 }
 
-.github-link--container:hover,
-.github-link--container:active {
+.github-link--container:hover {
     cursor: pointer;
     background-color: rgb(51, 136, 222);
     border-color: rgb(51, 136, 222);
 }
 
-.github-link--container:hover .github-link-logo,
-.github-link--container:active .github-link-logo {
+.github-link--container:hover .github-link-logo {
     animation: 0.4s linear 0s 1 alternate slide-right;
 }
 
-.github-link--container:hover .github-link, 
-.github-link--container:active .github-link{
+.github-link--container:hover .github-link {
     animation: 0.4s linear 0s 1 alternate slide-left;
 }
 
@@ -130,6 +127,7 @@
 }
 
 /* MEDIA QUERIES */
+
 @media screen and (max-width: 1200px) {
     .main-projects {
         padding: 50px 60px 30px 60px;
@@ -157,6 +155,13 @@
     }
     .project-info--tech-list {
         grid-template-columns: repeat(4, auto);
+    }
+    .github-link--container {
+        background-color: rgb(51, 136, 222);
+        border-color: rgb(51, 136, 222);
+    }
+    .github-link--container:hover {
+        cursor: pointer;
     }
 }
 
