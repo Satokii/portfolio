@@ -48,14 +48,14 @@ function MainProjects() {
                             Github link pending
                         </div>
                     </div>
-                    {/* <a className='project-links-container grid' target='_blank' href="#" rel="noreferrer">
-                        <div className='github-link--container grid'>
+                    {/* <div className='project-links-container grid'>
+                        <a className='github-link--container grid' target='_blank' href="#" rel="noreferrer">
                             <p className='github-link grid'>
                                 Github
                             </p>
                             <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
-                        </div>
-                    </a> */}
+                        </a>
+                    </div> */}
                 </article>
                 <article className='main-projects--project grid'>
                     <h3 className='project-info--header grid'>Gymtyme - Workout App</h3>
@@ -84,14 +84,14 @@ function MainProjects() {
                             <video preload='auto' controls src={`${WorkoutNavVid}#t=0.1`} type="video/mp4" ></video>
                         </div>
                     </div>
-                    <a className='project-links-container grid' target='_blank' href="https://github.com/Satokii/workout-app" rel="noreferrer">
-                        <div className='github-link--container grid'>
+                    <div className='project-links-container grid'>
+                        <a className='github-link--container grid' target='_blank' href="https://github.com/Satokii/workout-app" rel="noreferrer">
                             <p className='github-link grid'>
                                     Github
                             </p>
                             <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </article>
                 <article className='main-projects--project grid'>
                     <h3 className='project-info--header grid'>Social Media Post Feed Dashboard</h3>
@@ -114,14 +114,14 @@ function MainProjects() {
                     <div className='project-image--container grid'>
                         <img className='project-image--image' src={DashboardMain} alt="dashboard project main photo"/>
                     </div>
-                    <a className='project-links-container grid' target='_blank' href="https://github.com/Satokii/react-cohort-dashboard-challenge" rel="noreferrer">
-                        <div className='github-link--container grid'>
+                    <div className='project-links-container grid'>
+                        <a className='github-link--container grid' target='_blank' href="https://github.com/Satokii/react-cohort-dashboard-challenge" rel="noreferrer">
                             <p className='github-link grid'>
                                     Github
                             </p>
                             <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </article>
             </div>
         </section>
