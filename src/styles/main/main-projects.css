@@ -87,14 +87,9 @@
     border: solid 1px white;
     border-radius: 20px;
     padding: 6px 25px;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     transition: 0.4s;
-}
-
-.deployed-link--container span {
-    font-size: 14px;
-    font-weight: normal;
 }
 
 .deployed-link--container:hover {
@@ -253,9 +248,6 @@
     .deployed-link--container {
         font-size: 14px;
         padding: 5px 20px;
-    }
-    .deployed-link--container span {
-        font-size: 12px;
     }
 }
 

@@ -92,7 +92,7 @@ function MainProjects() {
                             <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
                         </a>
                         <a className='deployed-link--container' target='_blank' href="https://gymtyme.netlify.app/" rel="noreferrer">
-                            <p>Deployed app <span></span></p>
+                            <p>Deployed app</p>
                         </a>
                     </div>
                 </article>
