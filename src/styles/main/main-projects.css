@@ -81,14 +81,19 @@
     margin-bottom: 10px;
 }
   
-/* DEPLOYED LINK */
-.deployed-link--container {
+.deployed-link--container,
+.github-link--container {
     place-self: center;
+    align-items: center;
     border: solid 1px white;
     border-radius: 20px;
     padding: 6px 25px;
     font-size: 20px;
     font-weight: bold;
+}
+
+/* DEPLOYED LINK */
+.deployed-link--container {
     transition: 0.4s;
     text-align: center;
 }
@@ -101,11 +106,6 @@
 /* GITHUB LINK */
 .github-link--container {
     grid-template-columns: repeat(2, auto);
-    place-self: center;
-    align-items: center;
-    border: solid 1px white;
-    border-radius: 20px;
-    padding: 6px 25px;
     gap: 10px;
     transition: 0.2s;
 }
