@@ -103,49 +103,25 @@
         width: 100%;
         margin-top: 20px;
     }
-    .overview-text-container {
-        max-width: 100%;
+    .overview-quick-links {
+        gap: 15px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .overview {
-        padding: 20px 50px;
-    }
-    .overview-container {
-        grid-template-columns: 1fr;
-    }
-    .overview-left {
-        grid-template-rows: auto;
-        padding: 20px;
-    }
-    .overview-right {
-        padding: 20px;
-    }
-    .profile-photo-container {
-        width: 100%;
-        margin-top: 20px;
-    }
     .overview-quick-links {
-        gap: 15px;
+        gap: 13px;
     } 
 }
 
 @media screen and (max-width: 480px) {
     .overview {
-        padding: 20px;
-    }
-    .overview-left, .overview-right {
-        padding: 10px;
+        padding: 20px 0;
     }
     .overview-header {
         font-size: 60px;
     }
     .overview-job-header {
         font-size: 30px;
-    }
-    .profile-photo-container {
-        width: 100%;
-        margin-top: 20px;
     }
 }
