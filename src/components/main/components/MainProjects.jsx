@@ -53,7 +53,7 @@ function MainProjects() {
                             <p className='github-link grid'>
                                 Github
                             </p>
-                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
+                            <img className='github-link-logo' src={GithubLogo} alt="github logo" />
                         </a>
                     </div> */}
                 </article>
@@ -89,7 +89,7 @@ function MainProjects() {
                             <p className='github-link grid'>
                                     Github
                             </p>
-                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
+                            <img className='github-link-logo' src={GithubLogo} alt="github logo" />
                         </a>
                         <a className='deployed-link--container' target='_blank' href="https://gymtyme.netlify.app/" rel="noreferrer">
                             <p>Deployed app</p>
@@ -122,7 +122,7 @@ function MainProjects() {
                             <p className='github-link grid'>
                                     Github
                             </p>
-                            <img className='github-link-logo' src={GithubLogo} alt="github logo" width={25} />
+                            <img className='github-link-logo' src={GithubLogo} alt="github logo" />
                         </a>
                     </div>
                 </article>

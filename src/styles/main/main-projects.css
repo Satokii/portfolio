@@ -120,6 +120,11 @@
     border-color: rgb(51, 136, 222);
 }
 
+.github-link-logo {
+    width: 25px;
+    height: 25px;
+}
+
 .github-link--container:hover .github-link-logo {
     animation: 0.4s linear 0s 1 alternate slide-right;
 }
@@ -253,15 +258,25 @@
     .project-video--container video {
         padding: 10px;
     }
+    .project-links-container {
+        gap: 15px;
+    }
     .github-link--container {
         padding: 4px 20px;
+        min-width: 130px;
+        gap: 10px;
     }
     .github-link {
         font-size: 14px;
     }
+    .github-link-logo {
+        width: 20px;
+        height: 20px;
+    }
     .deployed-link--container {
+        padding: 4px 20px;
         font-size: 14px;
-        padding: 5px 20px;
+        min-width: 130px;
     }
 }
 
