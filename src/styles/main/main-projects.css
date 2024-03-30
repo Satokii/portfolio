@@ -163,6 +163,10 @@
         width: 100vw;
         justify-self: center;
     }
+    .main-projects--project {
+        gap: 10px;
+        padding: 10px 5px;
+    }
     .main-projects--header {
         font-size: 50px;
         justify-self: center;
@@ -185,13 +189,23 @@
         gap: 20px;
     }
     .github-link--container {
+        justify-content: center;
+        gap: 15px;
+        padding: 5px 10px;
+        min-width: 150px;
         background-color: rgb(51, 136, 222);
         border-color: rgb(51, 136, 222);
     }
     .github-link--container:hover {
         cursor: pointer;
     }
+    .github-link {
+        font-size: 18px;
+    }
     .deployed-link--container {
+        min-width: 150px;
+        padding: 5px 15px;
+        font-size: 18px;
         background-color: #ab33de;
         border-color: #ab33de;
     }
