@@ -43,15 +43,21 @@ function MainProjects() {
                             <video preload='auto' controls src={`${SpotifyDetailsVid}#t=0.1`} type="video/mp4" ></video>
                         </div>
                     </div>
-                    <div className='project-links-container grid'>
+                    {/* <div className='project-links-container grid'>
                         <div className='github-link--container grid'>
                             Github link pending
                         </div>
-                    </div>
+                    </div> */}
                     <div className='project-links-container grid'>
                         <a className='github-link--container grid' target='_blank' href="https://github.com/Satokii/spotify-clone" rel="noreferrer">
                             <p className='github-link grid'>
                                 Github (client)
+                            </p>
+                            <img className='github-link-logo' src={GithubLogo} alt="github logo" />
+                        </a>
+                        <a className='github-link--container grid' target='_blank' href="https://github.com/Satokii/spoti-server" rel="noreferrer">
+                            <p className='github-link grid'>
+                                Github (server)
                             </p>
                             <img className='github-link-logo' src={GithubLogo} alt="github logo" />
                         </a>
