@@ -48,14 +48,14 @@ function MainProjects() {
                             Github link pending
                         </div>
                     </div>
-                    {/* <div className='project-links-container grid'>
-                        <a className='github-link--container grid' target='_blank' href="#" rel="noreferrer">
+                    <div className='project-links-container grid'>
+                        <a className='github-link--container grid' target='_blank' href="https://github.com/Satokii/spotify-clone" rel="noreferrer">
                             <p className='github-link grid'>
-                                Github
+                                Github (client)
                             </p>
                             <img className='github-link-logo' src={GithubLogo} alt="github logo" />
                         </a>
-                    </div> */}
+                    </div>
                 </article>
                 <article className='main-projects--project grid'>
                     <h3 className='project-info--header grid'>Gymtyme - Workout App</h3>
