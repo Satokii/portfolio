@@ -30,6 +30,8 @@ function MainProjects() {
                                 <li>Express.js</li>
                                 <li>PostgreSQL</li>
                                 <li>Prisma</li>
+                                <li>JWT</li>
+                                <li>Bcrypt</li>
                             </ul>
                         </div>
                     </section>
