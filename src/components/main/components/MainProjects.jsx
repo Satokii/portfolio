@@ -135,7 +135,7 @@ function MainProjects() {
                     <section className='project-info grid'>
                         <div className='project-info--description grid'>
                             <h4 className='project-sub-header'>Description</h4>
-                            <p></p>
+                            <p>Babble is a real-time chat application. The app has a sign up and sign in function, allows a user to add friends and send instant messages which update in real time. <br /><br /> For this app I used the Next.js framework along with TypeScript and Tailwind CSS to help streamline the development process. I utilised the Next Auth library for the authentication which helped with the sign up and sign in function as well as to implement a Google OAuth login option for the user. For the database I used Redis on the Upstash platform due to the low latency which helps with the real-time aspect of an instant messenger app, and Pusher in order to implement this real-time aspect. <br /><br /> In regard to some of the finer details of Babble, a user initially has the option of signing up for the app using an email, name and password, or alternatively using Google OAuth. After signing in the user can add any other user on the app by searching via their email. Successfully added friends can then send instant messages to each other. Messages have timestamps and can be deleted by the user who sent them. A user can also update their name and email in their profile.</p>
                         </div>
                         <div className='project-info--tech grid'>
                             <h4 className='project-sub-header'>Tech Used</h4>
