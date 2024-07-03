@@ -129,6 +129,37 @@ function MainProjects() {
                         </a>
                     </div>
                 </article>
+                {/* new */}
+                <article className='main-projects--project grid'>
+                    <h3 className='project-info--header grid'>Babble - Chat App</h3>
+                    <section className='project-info grid'>
+                        <div className='project-info--description grid'>
+                            <h4 className='project-sub-header'>Description</h4>
+                            <p></p>
+                        </div>
+                        <div className='project-info--tech grid'>
+                            <h4 className='project-sub-header'>Tech Used</h4>
+                            <ul className='project-info--tech-list grid'>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>React</li>
+                                <li>RESTful API</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <div className='project-image--container grid'>
+                        <img className='project-image--image' src={""} alt="dashboard project main photo"/>
+                    </div>
+                    <div className='project-links-container grid'>
+                        <a className='github-link--container grid' target='_blank' href="https://github.com/Satokii/react-cohort-dashboard-challenge" rel="noreferrer">
+                            <p className='github-link grid'>
+                                    Github
+                            </p>
+                            <img className='github-link-logo' src={GithubLogo} alt="github logo" />
+                        </a>
+                    </div>
+                </article>
             </div>
         </section>
     )
