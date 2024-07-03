@@ -1,4 +1,3 @@
-import DashboardMain from '../../../assets/project-images/dashboard-main.png'
 import ChatAppSignIn from '../../../assets/project-images/chat-app-sign-in.png'
 import ChatAppDashboard from '../../../assets/project-images/chat-app-dashboard.png'
 import GithubLogo from '../../../assets/misc/github-logo.svg'
@@ -134,37 +133,7 @@ function MainProjects() {
                             <p>Deployed app</p>
                         </a>
                     </div>
-                </article>
-                <article className='main-projects--project grid'>
-                    <h3 className='project-info--header grid'>Social Media Post Feed Dashboard</h3>
-                    <section className='project-info grid'>
-                        <div className='project-info--description grid'>
-                            <h4 className='project-sub-header'>Description</h4>
-                            <p>I built this social media style community post dashboard from scratch as a part of my Boolean bootcamp. I used a reference image provided by Boolean to guide the styling of the application. <br /> <br /> A user can create a new post, delete existing comments and posts, create a new user and also update existing user details. <br /> <br />I used an API as my data source and used the relevant API methods in order to send relevant requests to achieve the aforementioned behaviours.</p>
-                        </div>
-                        <div className='project-info--tech grid'>
-                            <h4 className='project-sub-header'>Tech Used</h4>
-                            <ul className='project-info--tech-list grid'>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>JavaScript</li>
-                                <li>React</li>
-                                <li>RESTful API</li>
-                            </ul>
-                        </div>
-                    </section>
-                    <div className='project-image--container grid'>
-                        <img className='project-image--image' src={DashboardMain} alt="dashboard project main photo"/>
-                    </div>
-                    <div className='project-links-container grid'>
-                        <a className='github-link--container grid' target='_blank' href="https://github.com/Satokii/react-cohort-dashboard-challenge" rel="noreferrer">
-                            <p className='github-link grid'>
-                                    Github
-                            </p>
-                            <img className='github-link-logo' src={GithubLogo} alt="github logo" />
-                        </a>
-                    </div>
-                </article>                
+                </article>         
             </div>
         </section>
     )
