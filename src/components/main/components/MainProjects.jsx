@@ -84,13 +84,12 @@ function MainProjects() {
           </div>
         </article>
         <article className="main-projects--project grid">
-          <h3 className="project-info--header grid">Spotify Clone</h3>
+          <h3 className="project-info--header grid">Codeify - Spotify Clone</h3>
           <section className="project-info grid">
             <div className="project-info--description grid">
               <h4 className="project-sub-header">Description</h4>
               <p>
-                My most recent project (and current work in progress) is the
-                creation of this full-stack Spotify clone app. What I like most
+                Codeify is a full-stack Spotify clone app. What I like most
                 about the Spotify app is the design and ease of use for the
                 consumer. As such, I wanted to remain truthful to this design in
                 my own approach, whilst also implementing a few subtle changes
