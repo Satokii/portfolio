@@ -158,7 +158,7 @@ function MainProjects() {
                         <img className='project-image--image' src={ChatAppDashboard} alt="chat app dashboard page"/>
                     </div>
                     <div className='project-links-container grid'>
-                        <a className='github-link--container grid' target='_blank' href="https://github.com/Satokii/react-cohort-dashboard-challenge" rel="noreferrer">
+                        <a className='github-link--container grid' target='_blank' href="https://github.com/Satokii/chat-app" rel="noreferrer">
                             <p className='github-link grid'>
                                     Github
                             </p>
