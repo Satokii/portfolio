@@ -18,7 +18,7 @@ function MainProjects() {
             <div className="project-info--description grid">
               <h4 className="project-sub-header">Description</h4>
               <p>
-                Babble is a real-time chat application. The app has a sign up
+                Babble is a full-stack real-time chat application. The app has a sign up
                 and sign in function, allows a user to add friends and send
                 instant messages which update in real time. <br />
                 <br /> For this app I used the Next.js framework along with
