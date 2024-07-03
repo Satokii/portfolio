@@ -1,4 +1,6 @@
 import DashboardMain from '../../../assets/project-images/dashboard-main.png'
+import ChatAppSignIn from '../../../assets/project-images/chat-app-sign-in.png'
+import ChatAppDashboard from '../../../assets/project-images/chat-app-dashboard.png'
 import GithubLogo from '../../../assets/misc/github-logo.svg'
 import SpotifyPlaybackVid from '../../../assets/vids/spotify-playback.mp4'
 import SpotifyDetailsVid from '../../../assets/vids/spotify-details.mp4'
@@ -152,7 +154,8 @@ function MainProjects() {
                         </div>
                     </section>
                     <div className='project-image--container grid'>
-                        <img className='project-image--image' src={""} alt="dashboard project main photo"/>
+                        <img className='project-image--image' src={ChatAppSignIn} alt="chat app sign in page"/>
+                        <img className='project-image--image' src={ChatAppDashboard} alt="chat app dashboard page"/>
                     </div>
                     <div className='project-links-container grid'>
                         <a className='github-link--container grid' target='_blank' href="https://github.com/Satokii/react-cohort-dashboard-challenge" rel="noreferrer">
