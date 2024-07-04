@@ -12,7 +12,7 @@ function MainProjects() {
       <h2 className="main-projects--header">My Projects</h2>
       <div className="main-projects--container grid">
         <ChatApp />
-        <article className="main-projects--project grid">
+        {/* <article className="main-projects--project grid">
           <h3 className="project-info--header grid">Codeify - Spotify Clone</h3>
           <section className="project-info grid">
             <div className="project-info--description grid">
@@ -112,7 +112,7 @@ function MainProjects() {
               />
             </a>
           </div>
-        </article>
+        </article> */}
         <article className="main-projects--project grid">
           <h3 className="project-info--header grid">Gymtyme - Workout App</h3>
           <section className="project-info grid">
