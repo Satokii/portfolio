@@ -9,7 +9,6 @@ function Overview() {
                 <div className='overview-left grid'>
                     <header className='overview-header-container grid'>
                         <h2 className='overview-header grid'>Satoki Ito</h2>
-                        <p className='overview-sub-detail-header'>Former banker, now</p>
                         <h3 className='overview-job-header'>Full-Stack Developer</h3>
                     </header>
                     <div className='profile-photo-container grid'>
