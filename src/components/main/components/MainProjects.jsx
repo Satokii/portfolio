@@ -4,6 +4,7 @@ import WorkoutNavVid from "../../../assets/vids/workout-general-navigation.mp4";
 import "../../../styles/main/main-projects.css";
 import ChatApp from "../projects/ChatApp";
 import SpotifyClone from "../projects/SpotifyClone";
+import WorkoutApp from "../projects/WorkoutApp";
 
 function MainProjects() {
   return (
@@ -12,6 +13,7 @@ function MainProjects() {
       <div className="main-projects--container grid">
         <ChatApp />
         <SpotifyClone />
+        <WorkoutApp />
         {/* <article className="main-projects--project grid">
           <h3 className="project-info--header grid">Gymtyme - Workout App</h3>
           <section className="project-info grid">
