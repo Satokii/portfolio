@@ -6,12 +6,14 @@ import SpotifyDetailsVid from "../../../assets/vids/spotify-details.mp4";
 import WorkoutAddWorkoutVid from "../../../assets/vids/workout-add-workout.mp4";
 import WorkoutNavVid from "../../../assets/vids/workout-general-navigation.mp4";
 import "../../../styles/main/main-projects.css";
+import ChatApp from "../projects/ChatApp";
 
 function MainProjects() {
   return (
     <section id="projects" className="main-projects grid">
       <h2 className="main-projects--header">My Projects</h2>
       <div className="main-projects--container grid">
+        <ChatApp />
         {/* <article className="main-projects--project grid">
           <h3 className="project-info--header grid">Babble - Chat App</h3>
           <section className="project-info grid">

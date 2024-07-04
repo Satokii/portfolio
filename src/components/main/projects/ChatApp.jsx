@@ -1,5 +1,6 @@
 import ChatAppSignIn from "../../../assets/project-images/chat-app-sign-in.png";
 import ChatAppDashboard from "../../../assets/project-images/chat-app-dashboard.png";
+import GithubLogo from "../../../assets/misc/github-logo.svg";
 
 function ChatApp() {
   return (
