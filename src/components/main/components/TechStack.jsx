@@ -8,7 +8,6 @@ import PostgreSQLLogo from '../../../assets/tech-stack-logos/postgreSQL-logo.jpg
 import PrismaLogo from '../../../assets/tech-stack-logos/prisma-logo.webp'
 
 function TechStack({ setShowTechStackText }) {
-    // const [showTechStackText, setShowTechStackText] = useState(INITIAL_STATE)
 
     const INITIAL_STATE = {
         name: '',
