@@ -1,27 +1,26 @@
-import HTMLLogo from '../../../assets/tech-stack-logos/html-logo.jpg'
-import CSSLogo from '../../../assets/tech-stack-logos/css-logo.jpg'
-import JSLogo from '../../../assets/tech-stack-logos/js-logo.png'
-import ReactLogo from '../../../assets/tech-stack-logos/react-logo.png'
-import GitLogo from '../../../assets/tech-stack-logos/git-logo.webp'
-import ExpressLogo from '../../../assets/tech-stack-logos/express-logo.png'
-import PostgreSQLLogo from '../../../assets/tech-stack-logos/postgreSQL-logo.jpg'
-import PrismaLogo from '../../../assets/tech-stack-logos/prisma-logo.webp'
+import HTMLLogo from "../../../assets/tech-stack-logos/html-logo.jpg";
+import CSSLogo from "../../../assets/tech-stack-logos/css-logo.jpg";
+import JSLogo from "../../../assets/tech-stack-logos/js-logo.png";
+import ReactLogo from "../../../assets/tech-stack-logos/react-logo.png";
+import GitLogo from "../../../assets/tech-stack-logos/git-logo.webp";
+import ExpressLogo from "../../../assets/tech-stack-logos/express-logo.png";
+import PostgreSQLLogo from "../../../assets/tech-stack-logos/postgreSQL-logo.jpg";
+import PrismaLogo from "../../../assets/tech-stack-logos/prisma-logo.webp";
 
 function TechStack({ setShowTechStackText }) {
+  const INITIAL_STATE = {
+    name: "",
+    className: "",
+  };
 
-    const INITIAL_STATE = {
-        name: '',
-        className: ''
-    }
+  function removeText() {
+    setShowTechStackText(INITIAL_STATE);
+  }
 
-    function removeText() {
-        setShowTechStackText(INITIAL_STATE)
-    }
-
-    function toggleText(e) {
-        const { name, className } = e.target
-        setShowTechStackText({name: name, className: className})
-    }
+  function toggleText(e) {
+    const { name, className } = e.target;
+    setShowTechStackText({ name: name, className: className });
+  }
   return (
     <div onMouseOut={removeText} className="tech-stack-logos grid">
       <img
