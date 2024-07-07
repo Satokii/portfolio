@@ -9,40 +9,40 @@ const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 
 
 function Contact() {
-    const [toSend, setToSend] = useState({
-        from_name: '',
-        message: '',
-        from_email: '',
-    });
+    // const [toSend, setToSend] = useState({
+    //     from_name: '',
+    //     message: '',
+    //     from_email: '',
+    // });
     
-    const onSubmit = (e) => {
-        e.preventDefault();
+    // const onSubmit = (e) => {
+    //     e.preventDefault();
        
-        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
-        .then(() => {
-            alert('Message Sent Successfully')
-        }, (error) => {
-            console.log(error.text);
-            alert('Something went wrong!')
-        });
+    //     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+    //     .then(() => {
+    //         alert('Message Sent Successfully')
+    //     }, (error) => {
+    //         console.log(error.text);
+    //         alert('Something went wrong!')
+    //     });
        
-        setToSend({
-            from_name: '',
-            message: '',
-            from_email: '',
-        })
-        };
+    //     setToSend({
+    //         from_name: '',
+    //         message: '',
+    //         from_email: '',
+    //     })
+    //     };
     
-    const handleChange = (e) => {
-        setToSend({ ...toSend, [e.target.name]: e.target.value });
-    };
+    // const handleChange = (e) => {
+    //     setToSend({ ...toSend, [e.target.name]: e.target.value });
+    // };
 
     return (
         <section id='contact' className='main-contact grid'>
             <h2 className='main-contact--header'>Contact</h2>
             <h3 className='main-contact--subheader'>Get in touch!</h3>
             <div className='main-contact--contact-info-container grid'>
-                <form className='main-contact--contact-form grid' onSubmit={onSubmit}>
+                {/* <form className='main-contact--contact-form grid' onSubmit={onSubmit}>
                     <input
                         type='text'
                         name='from_name'
@@ -68,7 +68,7 @@ function Contact() {
                     >
                     </textarea>                    
                     <button type='submit'>Submit</button>
-                </form>
+                </form> */}
                 <div className='main-contact--linkedin-container grid'>
                     <a className='main-contact--linkedin-link grid' target='_blank'  href="https://www.linkedin.com/in/satoki-ito-470133241/" rel="noreferrer">
                         <p className='main-contact--linkedin-text'> Connect with me</p>
