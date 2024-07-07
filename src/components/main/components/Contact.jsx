@@ -2,6 +2,7 @@ import { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import LinkedInLogo from '../../../assets/misc/linkedin-logo.webp'
 import '../../../styles/main/main-contact.css'
+import ContactForm from './ContactForm';
 
 const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
 const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
@@ -42,6 +43,7 @@ function Contact() {
             <h2 className='main-contact--header'>Contact</h2>
             <h3 className='main-contact--subheader'>Get in touch!</h3>
             <div className='main-contact--contact-info-container grid'>
+                <ContactForm />
                 {/* <form className='main-contact--contact-form grid' onSubmit={onSubmit}>
                     <input
                         type='text'
