@@ -41,6 +41,7 @@
 .header-nav-list > li:hover {
     cursor: pointer;
     transform: scale(1.05);
+    color: #add8e6;
 }
 
 /* HAMBURGER MENU */
