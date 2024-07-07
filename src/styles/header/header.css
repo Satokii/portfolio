@@ -17,6 +17,10 @@
     cursor: pointer;
 }
 
+.logo:hover {
+    color: #add8e6;
+}
+
 .menu-toggle {
     display: none;
     cursor: pointer;
