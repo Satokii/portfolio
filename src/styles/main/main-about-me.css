@@ -1,154 +1,156 @@
 /* MAIN - ABOUT ME */
 .main-about-me {
-    grid-template-rows: 100px auto 1fr 120px;
-    gap: 20px;
-    padding: 110px 150px 50px 150px;
-    height: 100%;
-    border-bottom: solid 5px rgba(128, 128, 128, 0.47);
+  grid-template-rows: 100px auto 1fr 120px;
+  gap: 20px;
+  padding: 110px 150px 50px 150px;
+  height: 100%;
+  border-bottom: solid 5px rgba(128, 128, 128, 0.47);
 }
 
 /* ABOUT ME HEADER */
 .main-about-me-header {
-    font-size: 70px;
-    text-decoration: underline 4px;
+  font-size: 70px;
+  text-decoration: underline 4px;
 }
 
 /* ABOUT ME TEXT */
 .main-about-me-text {
-    place-self: center;
-    text-align: justify;
-    font-size: 22px;
+  place-self: center;
+  text-align: justify;
+  font-size: 22px;
 }
 
 /* SKILLS - TECH STACK IMAGES */
 .tech-stack-logos {
-    grid-auto-flow: column;
-    gap: 10px;
-    height: 300px;
-    place-items: center;
-    border-radius: 5px;
-    padding: 20px 20px;
+  grid-auto-flow: column;
+  gap: 10px;
+  height: 300px;
+  place-items: center;
+  border-radius: 5px;
+  padding: 20px 20px;
 }
 
 .tech-stack-logos img {
-    object-fit: cover;
-    width: 0;
-    height: 0;
-    min-width: calc(100% + 60px);
-    min-height: 100%;
-    transition: 0.6s;
-    filter: grayscale(80%);
-    clip-path: polygon(60px 0, 100% 0, calc(100% - 60px) 100%, 0 100%);
+  object-fit: cover;
+  width: 0;
+  height: 0;
+  min-width: calc(100% + 60px);
+  min-height: 100%;
+  transition: 0.6s;
+  filter: grayscale(80%);
+  clip-path: polygon(60px 0, 100% 0, calc(100% - 60px) 100%, 0 100%);
 }
 
 .tech-stack-logos img:first-child {
-    min-width: calc(100% + 60px/2);
-    place-self: start;
-    clip-path: polygon(0 0, 100% 0, calc(100% - 60px) 100%, 0 100%);
+  min-width: calc(100% + 60px / 2);
+  place-self: start;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 60px) 100%, 0 100%);
 }
 
 .tech-stack-logos img:last-child {
-    min-width: calc(100% + 60px/2);
-    place-self: end;
-    clip-path: polygon(60px 0, 100% 0, 100% 100%, 0 100%);
+  min-width: calc(100% + 60px / 2);
+  place-self: end;
+  clip-path: polygon(60px 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .tech-stack-logos img:hover {
-    width: 11vw;
-    filter: grayscale(0%);
- }
+  width: 11vw;
+  filter: grayscale(0%);
+}
 
 /* SKILLS - TECH STACK TEXT */
 .tech-stack-text {
-    place-items: center;
-    font-size: 56px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 20px;
+  place-items: center;
+  font-size: 56px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
 }
 
 /* SPECIFIC TECH STACK TEXT STYLES */
 .js-logo {
-    text-shadow: 2px 2px 8px yellow, 1px 1px 3px yellow, 0 0 10px darkgoldenrod;
+  text-shadow: 2px 2px 8px yellow, 1px 1px 3px yellow, 0 0 10px darkgoldenrod;
 }
 
 .html-logo {
-    text-shadow: 2px 2px 10px darkorange, 1px 1px 5px darkorange, 0 0 10px darkorange;
+  text-shadow: 2px 2px 10px darkorange, 1px 1px 5px darkorange,
+    0 0 10px darkorange;
 }
 
 .git-logo {
-    text-shadow: 2px 2px 10px rgb(193, 3, 3), 1px 1px 5px rgb(193, 3, 3), 0 0 10px darkred;
+  text-shadow: 2px 2px 10px rgb(193, 3, 3), 1px 1px 5px rgb(193, 3, 3),
+    0 0 10px darkred;
 }
 
 .css-logo {
-    text-shadow: 2px 2px 10px blue, 1px 1px 5px blue, 0 0 10px darkblue;
+  text-shadow: 2px 2px 10px blue, 1px 1px 5px blue, 0 0 10px darkblue;
 }
 
 .react-logo {
-    text-shadow: 2px 2px 7px cyan, 1px 1px 5px darkcyan, 0 0 10px darkcyan;
+  text-shadow: 2px 2px 7px cyan, 1px 1px 5px darkcyan, 0 0 10px darkcyan;
 }
 
 .express-logo {
-    text-shadow: 2px 2px 7px #575a5a, 1px 1px 5px #575a5a, 0 0 10px #575a5a;
+  text-shadow: 2px 2px 7px #575a5a, 1px 1px 5px #575a5a, 0 0 10px #575a5a;
 }
 
 .postgreSQL-logo {
-    text-shadow: 2px 2px 7px #039393, 1px 1px 5px #039393, 0 0 10px #039393;
+  text-shadow: 2px 2px 7px #039393, 1px 1px 5px #039393, 0 0 10px #039393;
 }
 
 .prisma-logo {
-    text-shadow: 2px 2px 7px #046185, 1px 1px 5px #046185, 0 0 10px #046185;
+  text-shadow: 2px 2px 7px #046185, 1px 1px 5px #046185, 0 0 10px #046185;
 }
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
-    .main-about-me {
-        padding: 50px 60px 30px 60px;
-    }
+  .main-about-me {
+    padding: 50px 60px 30px 60px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .main-about-me {
-        padding: 30px 40px 30px 40px;
-    }
+  .main-about-me {
+    padding: 30px 40px 30px 40px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .main-about-me {
-        grid-template-rows: 60px auto 1fr 60px;
-        padding: 20px 20px;
-    }
+  .main-about-me {
+    grid-template-rows: 60px auto 1fr 60px;
+    padding: 20px 20px;
+  }
 
-    .main-about-me-header {
-        font-size: 50px;
-        justify-self: center;
-    }
+  .main-about-me-header {
+    font-size: 50px;
+    justify-self: center;
+  }
 
-    .main-about-me-text {
-        font-size: 16px;
-        padding: 0 30px;
-    }
+  .main-about-me-text {
+    font-size: 16px;
+    padding: 0 30px;
+  }
 
-    .tech-stack-logos {
-        width: 100vw;
-        place-self: center;
-    }
+  .tech-stack-logos {
+    width: 100vw;
+    place-self: center;
+  }
 
-    .tech-stack-text {
-        font-size: 36px;
-    }
+  .tech-stack-text {
+    font-size: 36px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .main-about-me-header {
-        font-size: 40px;
-    }
+  .main-about-me-header {
+    font-size: 40px;
+  }
 
-    .main-about-me-text {
-        font-size: 14px;
-    }
+  .main-about-me-text {
+    font-size: 14px;
+  }
 
-    .tech-stack-text {
-        font-size: 30px;
-    }
+  .tech-stack-text {
+    font-size: 30px;
+  }
 }
