@@ -74,6 +74,14 @@ function ChatApp() {
               alt="github logo"
             />
           </a>
+          <a
+            className="deployed-link--container"
+            target="_blank"
+            href="#"
+            rel="noreferrer"
+          >
+            <p>Deployed app</p>
+          </a>
         </div>
       </article>
     </>
