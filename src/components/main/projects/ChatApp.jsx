@@ -77,7 +77,7 @@ function ChatApp() {
           <a
             className="deployed-link--container"
             target="_blank"
-            href="#"
+            href="https://babble-nu.vercel.app"
             rel="noreferrer"
           >
             <p>Deployed app</p>
