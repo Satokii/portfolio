@@ -18,16 +18,17 @@
 }
 
 .main-contact--contact-info-container {
-  gap: 20px;
-  place-content: center;
   grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   align-items: start;
+  place-content: center;
 }
 
 /* LINKEDIN */
 .main-contact--linkedin-container {
   justify-content: center;
   margin-top: 10px;
+  align-items: center;
 }
 
 .main-contact--linkedin-link {
@@ -35,10 +36,17 @@
   gap: 10px;
   align-items: center;
   text-decoration: none;
-  color: #333;
-  background-color: #f0f0f0;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 15px 25px;
+  border-radius: 8px;
+  background-color: #556cd6;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.main-contact--linkedin-link:hover {
+  background-color: #4051b5;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .main-contact--linkedin-text {
