@@ -20,6 +20,8 @@
 .main-contact--contact-info-container {
   gap: 20px;
   place-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
 }
 
 /* LINKEDIN */
