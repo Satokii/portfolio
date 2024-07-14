@@ -87,6 +87,7 @@
   border-radius: 5px;
   cursor: pointer;
   justify-self: end;
+  transition: background-color 0.3s ease;
 }
 
 .main-contact--contact-form button:hover {
